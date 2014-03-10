@@ -7,4 +7,4 @@ class App.Views.ExamplesIndex extends Backbone.View
   render: ->
     console.log("Rendering templates/examples/index in examples.js.coffee")
     $(@el).html(@template(collection: @collection))
-    this
+    @

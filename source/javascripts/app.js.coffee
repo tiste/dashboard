@@ -5,8 +5,7 @@ window.App =
   Routers: {}
 
   init: ->
-    console.log("Initialized Backbone application")
-    new App.Routers.Examples
+    new App.Routers.Dashboard
     Backbone.history.start()
 
 $(document).ready ->

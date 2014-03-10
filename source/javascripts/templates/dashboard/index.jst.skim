@@ -1,0 +1,5 @@
+.m-overlay
+  .container.mtl
+    form
+      .form-group
+        input type='text' class='form-control input-lg' id='search'
