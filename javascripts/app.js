@@ -1,0 +1,1 @@
+(function(){window.App={Models:{},Collections:{},Views:{},Routers:{},init:function(){return new App.Routers.Dashboard,Backbone.history.start()}},$(document).ready(function(){return App.init()})}).call(this);
