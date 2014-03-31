@@ -1,1 +1,7 @@
-= @title
+.row.clickable onclick="openUrl('#{@url}')"
+  .col-md-1
+    .m-icons--google
+
+  .col-md-11.mtm
+    .h4.mtn.mbs= @safe @titleHtml
+    p.mbn= @safe @content

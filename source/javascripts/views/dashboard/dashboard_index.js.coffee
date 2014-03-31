@@ -5,6 +5,7 @@ class App.Views.DashboardIndex extends Backbone.View
     'keyup .m-search--input': (e) ->
       @isSearching(e)
       @search(e)
+    'submit .m-search': 'search'
 
   initialize: ->
     $(document).bind 'keypress', @displaySearch

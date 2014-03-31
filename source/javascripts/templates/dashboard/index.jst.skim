@@ -3,4 +3,4 @@
     form.m-search
       .form-group
         input type='text' class='form-control input-lg m-search--input'
-        .m-search--results
+        .m-search--results.white.pos-absolute-center

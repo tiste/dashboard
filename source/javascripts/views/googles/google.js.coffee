@@ -1,7 +1,7 @@
 class App.Views.Google extends Backbone.View
   template: JST['templates/googles/google']
 
-  tagName: 'li'
+  className: 'm-results--item'
 
   render: ->
     $(@el).html(@template(@model.toJSON()))

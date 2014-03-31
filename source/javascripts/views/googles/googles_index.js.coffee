@@ -4,8 +4,7 @@ class App.Views.GooglesIndex extends Backbone.View
   initialize: ->
     @collection.on('reset', @render, this)
 
-  addAll: () =>
-    @$('.m-search--results--list').html('')
+  addAll: =>
     @collection.each(@addOne)
 
   addOne: (google) =>
