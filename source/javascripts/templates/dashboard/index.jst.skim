@@ -1,5 +1,6 @@
 .m-overlay
   .container.mtl
-    form
+    form.m-search
       .form-group
-        input type='text' class='form-control input-lg' id='search'
+        input type='text' class='form-control input-lg m-search--input'
+        .m-search--results.white.pos-absolute-center

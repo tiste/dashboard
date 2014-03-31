@@ -1,6 +1,8 @@
 #= require jquery
 #= require underscore
 #= require backbone
+#= require backbone.localStorage
+#= require javascript
 #= require app
 #= require_tree ./templates
 #= require_tree ./models
