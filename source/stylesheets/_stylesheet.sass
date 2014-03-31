@@ -1,8 +1,38 @@
-.cover
-  background-size: cover
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
+@mixin background-size($size)
+  background-size: $size
+  -webkit-background-size: $size
+  -moz-background-size: $size
+  -o-background-size: $size
+
+.pos-absolute-center
+  margin: auto
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 70%
+  max-height: 50%
+  overflow-x: hidden
+  overflow-y: scroll
+  @include transform(translate(-50%, -50%))
+
+.clickable
+  cursor: pointer
+
+[class*='m-icons']
+  width: 60px
+  height: 60px
+
+.m-icons--facebook
+  background: url(/images/icons/facebook.png) center center
+  @include background-size(contain)
+
+.m-icons--google
+  background: url(/images/icons/google.png) center center
+  @include background-size(contain)
+
+.m-icons--twitter
+  background: url(/images/icons/twitter.png) center center
+  @include background-size(contain)
 
 .m-overlay
   background: rgba(0, 0, 0, 0.8)
@@ -12,3 +42,13 @@
   right: 0
   bottom: 0
   left: 0
+
+.m-search--results
+  @include border-top-radius(5px)
+  @include border-bottom-radius(5px)
+
+.m-results--item
+  @include transition (background-color .5s ease)
+
+  &:hover
+    background-color: darken(#FFFFFF, 10%)
