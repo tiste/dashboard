@@ -1,1 +1,1 @@
-(function(){this.openUrl=function(n){return window.open(n)}}).call(this);
+(function(){this.openUrl=function(n){return window.open(n,"_self")}}).call(this);

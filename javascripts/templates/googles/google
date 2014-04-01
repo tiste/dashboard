@@ -72,11 +72,25 @@
         context = {};
       }
       return Skim.withContext.call({}, context, function() {
-        var _buf;
+        var _buf, _skim_codeattributes1;
         _buf = '';
-        _buf += "<div class=\"row clickable\" onclick=\"openUrl(&#39;";
+        _buf += "<div class=\"row clickable url\"";
+        _skim_codeattributes1 = this.url;
+        switch (_skim_codeattributes1) {
+          case true:
+            _buf += " data-url=\"data-url\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " data-url=\"";
+            _buf += this.escape(_skim_codeattributes1);
+            _buf += "\"";
+        }
+        _buf += " onclick=\"openUrl(&#39;";
         _buf += this.escape(this.url);
-        _buf += "&#39;)\"><div class=\"col-md-1\"><div class=\"m-icons--google\"></div></div><div class=\"col-md-11 mtm\"><div class=\"h4 mtn mbs\">";
+        _buf += "&#39;)\"><div class=\"col-md-1\"><div class=\"m-icons--google--small\"></div></div><div class=\"col-md-11 mtm\"><div class=\"h4 mtn mbs\">";
         _buf += this.escape(this.safe(this.titleHtml));
         _buf += "</div><p class=\"mbn\">";
         _buf += this.escape(this.safe(this.content));
