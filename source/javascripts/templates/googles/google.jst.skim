@@ -1,4 +1,4 @@
-.row.clickable.url onclick="openUrl('#{@url}')" data-url=(@url)
+.row.clickable
   .col-md-1
     .m-icons--google--small
 

@@ -11,6 +11,6 @@ class App.Models.Google extends Backbone.Model
     attrs.content     = item.content
     attrs.title       = item.titleNoFormatting
     attrs.titleHtml   = item.title
-    attrs.url         = item.url
+    attrs.url         = decodeURIComponent(item.url)
     attrs.visibleUrl  = item.visibleUrl
     attrs

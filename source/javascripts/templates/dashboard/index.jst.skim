@@ -4,6 +4,7 @@
       .form-group
         input type='text' class='form-control input-lg m-search--input'
         .m-search--results.white.pos-absolute-center
+          .h4.text-center En cours de chargement
 
 .container-fluid.pln.prn
   .row
