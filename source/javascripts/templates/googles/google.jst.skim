@@ -1,6 +1,6 @@
-.row.clickable onclick="openUrl('#{@url}')"
+.row.clickable.url onclick="openUrl('#{@url}')" data-url=(@url)
   .col-md-1
-    .m-icons--google
+    .m-icons--google--small
 
   .col-md-11.mtm
     .h4.mtn.mbs= @safe @titleHtml

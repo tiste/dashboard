@@ -4,6 +4,9 @@
   -moz-background-size: $size
   -o-background-size: $size
 
+@mixin icon($name, $size: 100)
+  background-image: url(/images/icons/#{$name}-#{$size}.png)
+
 .pos-absolute-center
   margin: auto
   position: absolute
@@ -18,23 +21,36 @@
 .clickable
   cursor: pointer
 
-[class*='m-icons']
+[class^='m-icons']
   width: 60px
   height: 60px
-
-.m-icons--facebook
-  background: url(/images/icons/facebook.png) center center
+  background-position: center center
   @include background-size(contain)
 
-.m-icons--google
-  background: url(/images/icons/google.png) center center
-  @include background-size(contain)
+[class$='--large']
+  width: 350px
+  height: 350px
 
-.m-icons--twitter
-  background: url(/images/icons/twitter.png) center center
-  @include background-size(contain)
+.m-icons--facebook--small
+  @include icon(facebook)
+
+.m-icons--facebook--large
+  @include icon(facebook, 350)
+
+.m-icons--google--small
+  @include icon(google)
+
+.m-icons--google--large
+  @include icon(google, 350)
+
+.m-icons--twitter--small
+  @include icon(twitter)
+
+.m-icons--twitter--large
+  @include icon(twitter, 350)
 
 .m-overlay
+  z-index: 10
   background: rgba(0, 0, 0, 0.8)
   margin: auto
   position: absolute
@@ -47,8 +63,8 @@
   @include border-top-radius(5px)
   @include border-bottom-radius(5px)
 
-.m-results--item
+.m-search--results--item
   @include transition (background-color .5s ease)
 
-  &:hover
+  &:hover, &.selected
     background-color: darken(#FFFFFF, 10%)

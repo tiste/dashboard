@@ -1,2 +1,2 @@
 @openUrl = (url) ->
-  window.open(url)
+  window.open(url, '_self')

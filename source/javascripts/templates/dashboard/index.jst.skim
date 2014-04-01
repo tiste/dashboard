@@ -4,3 +4,7 @@
       .form-group
         input type='text' class='form-control input-lg m-search--input'
         .m-search--results.white.pos-absolute-center
+
+.container-fluid.pln.prn
+  .row
+    .col-lg-3.pln.prn
