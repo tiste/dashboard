@@ -39,6 +39,7 @@ class App.Views.DashboardIndex extends Backbone.View
   search: (e) =>
     if (e.keyCode < 37 or e.keyCode > 40) and (e.keyCode isnt 13) and (e.keyCode isnt 27)
       googles = new App.Collections.Googles()
+      tweets  = new App.Collections.Tweets()
 
       googles.fetch
         data:
@@ -50,6 +51,14 @@ class App.Views.DashboardIndex extends Backbone.View
           view = new App.Views.GooglesIndex collection: googles
           @$('.m-search--results').html(view.render().el)
           @$('.m-search--results--item').first().addClass('selected') unless $(@el).find('.selected').length > 0
+
+      tweets.fetch
+        data:
+          q: @$('.m-search--input').val()
+        dataType: 'jsonp'
+        success: ->
+          view = new App.Views.TweetsIndex collection: tweets
+          @$('.m-search--results').append(view.render().el)
 
   render: =>
     $(@el).html(@template)

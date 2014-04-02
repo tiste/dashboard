@@ -1,0 +1,15 @@
+.row.clickable
+  .col-md-1
+    .m-icons--twitter--small
+
+  .col-md-11.mtm
+    .h4.mtn.mbs
+      = @name
+      | &nbsp;(
+      = @screenName
+      | )&nbsp;
+
+      small
+        = @date
+
+    p.mbn= @safe @text
