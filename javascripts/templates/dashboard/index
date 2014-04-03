@@ -74,7 +74,7 @@
       return Skim.withContext.call({}, context, function() {
         var _buf;
         _buf = '';
-        _buf += "<div class=\"m-overlay\"><div class=\"container mtl\"><form class=\"m-search\"><div class=\"form-group\"><input class=\"form-control input-lg m-search--input\" type=\"text\" /><div class=\"m-search--results white pos-absolute-center\"><div class=\"h4 text-center\">En cours de chargement</div></div></div></form></div></div><div class=\"container-fluid pln prn\"><div class=\"row\"><div class=\"col-lg-3 pln prn\"></div></div></div>";
+        _buf += "<div class=\"m-overlay\"><div class=\"container mtl\"><form class=\"m-search\"><div class=\"form-group\"><input class=\"form-control input-lg m-search--input\" type=\"text\" /><div class=\"m-search--results white pos-absolute-center\"><div class=\"h4 text-center\">En cours de chargement</div></div></div></form></div></div><div class=\"container-fluid pln prn\"><div class=\"m-widget--clock\"></div><div class=\"m-widget--weather pos-absolute\"></div></div>";
         return _buf;
       });
     };

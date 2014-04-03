@@ -1,0 +1,134 @@
+(function() { this.JST || (this.JST = {}); this.JST["templates/weathers/index"] = (function() {
+    this.Skim = {
+      access: function(name) {
+        var value;
+        value = this[name];
+        if (typeof value === "function") {
+          value = value.call(this);
+        }
+        if (value === true) {
+          return [this];
+        }
+        if (value === false || (value == null)) {
+          return false;
+        }
+        if (Object.prototype.toString.call(value) !== "[object Array]") {
+          return [value];
+        }
+        if (value.length === 0) {
+          return false;
+        }
+        return value;
+      },
+      withContext: function(context, block) {
+        var create, flatten;
+        create = function(o) {
+          var F;
+          F = function() {};
+          F.prototype = o;
+          return new F;
+        };
+        context = create(context);
+        context.safe || (context.safe = this.safe || function(value) {
+          var result;
+          if (value != null ? value.skimSafe : void 0) {
+            return value;
+          }
+          result = new String(value != null ? value : '');
+          result.skimSafe = true;
+          return result;
+        });
+        context.isArray = Array.isArray || function(value) {
+          return {}.toString.call(value) === '[object Array]';
+        };
+        context.flatten = flatten = function(array) {
+          var element, flattened, _i, _len;
+          flattened = [];
+          for (_i = 0, _len = array.length; _i < _len; _i++) {
+            element = array[_i];
+            if (element instanceof Array) {
+              flattened = flattened.concat(flatten(element));
+            } else {
+              flattened.push(element);
+            }
+          }
+          return flattened;
+        };
+        context.escape || (context.escape = this.escape || function(string) {
+          if (string == null) {
+            return '';
+          }
+          if (string.skimSafe || !/[&<>\"]/.test(string)) {
+            return string;
+          }
+          return this.safe('' + string).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        });
+        return block.call(context);
+      }
+    };
+  
+    return function(context) {
+      if (context == null) {
+        context = {};
+      }
+      return Skim.withContext.call({}, context, function() {
+        var _buf;
+        _buf = '';
+        _buf += "<div class=\"row hidden\"><div class=\"col-md-2\"><div class=\"m-weather\"><form><div class=\"form-group\"><input class=\"form-control input-lg m-weather--city\" type=\"text\" /></div></form></div></div></div><div class=\"row\"><div class=\"m-weather--container\">";
+        _.each(this.weathers, function(weather, i) {
+          var _skim_codeattributes1, _skim_codeattributes2;
+          if (i === 0) {
+            _buf += "<div class=\"col-md-2\"><div class=\"m-weather--item\"><div class=\"h1 text-center\">Maintenant</div><img";
+            _skim_codeattributes1 = weather.text;
+            switch (_skim_codeattributes1) {
+              case true:
+                _buf += " alt=\"alt\"";
+                break;
+              case false:
+              case null:
+                break;
+              default:
+                _buf += " alt=\"";
+                _buf += this.escape(_skim_codeattributes1);
+                _buf += "\"";
+            }
+            _buf += " class=\"max-width\" src=\"/images/weathers/";
+            _buf += this.escape(weather.icon);
+            _buf += ".png\" /><div class=\"h2 mtn text-center\">";
+            _buf += this.escape(weather.tempDay);
+            return _buf += "</div></div></div>";
+          } else {
+            _buf += "<div class=\"col-md-1\"><div class=\"m-weather--item pvxl\"><div class=\"h3 text-center\">";
+            _buf += this.escape(weather.dateHTML);
+            _buf += "</div><img";
+            _skim_codeattributes2 = weather.text;
+            switch (_skim_codeattributes2) {
+              case true:
+                _buf += " alt=\"alt\"";
+                break;
+              case false:
+              case null:
+                break;
+              default:
+                _buf += " alt=\"";
+                _buf += this.escape(_skim_codeattributes2);
+                _buf += "\"";
+            }
+            _buf += " class=\"max-width\" src=\"/images/weathers/";
+            _buf += this.escape(weather.icon);
+            _buf += ".png\" /><div class=\"text-center\"><div class=\"h4\">";
+            _buf += this.escape(weather.tempDay);
+            _buf += "</div><div class=\"small\"><span class=\"celsius mrm opacity\">";
+            _buf += this.escape(weather.tempMin);
+            _buf += "</span><span class=\"celsius\">";
+            _buf += this.escape(weather.tempMax);
+            return _buf += "</span></div></div></div></div>";
+          }
+        });
+        _buf += "</div></div>";
+        return _buf;
+      });
+    };
+  
+  }).call(this);;
+}).call(this);
