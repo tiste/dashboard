@@ -7,6 +7,9 @@
 @mixin icon($name, $size: 100)
   background-image: url(/images/icons/#{$name}-#{$size}.png)
 
+body
+  color: #FEFEFE
+
 .pos-absolute-center
   margin: auto
   position: absolute
@@ -20,6 +23,9 @@
 
 .clickable
   cursor: pointer
+
+.opacity
+  opacity: .7
 
 [class^='m-icons']
   width: 60px
@@ -58,6 +64,7 @@
   right: 0
   bottom: 0
   left: 0
+  color: #333
 
 .m-search--results
   @include border-top-radius(5px)

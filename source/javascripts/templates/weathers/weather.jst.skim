@@ -1,0 +1,10 @@
+.col-md-1
+  .m-weather--item
+    img.max-width src="/images/weathers/#{@icon}.png" alt=(@text)
+
+    .text-center
+      .h3
+        = @tempDay
+      .small
+        span.mrm= @tempMin
+        = @tempMax
