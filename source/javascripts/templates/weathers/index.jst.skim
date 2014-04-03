@@ -1,4 +1,4 @@
-.row
+.row.hidden
   .col-md-2
     .m-weather
       form
@@ -10,17 +10,20 @@
       - if i == 0
         .col-md-2
           .m-weather--item
+            .h1.text-center Maintenant
+
             img.max-width src="/images/weathers/#{weather.icon}.png" alt=(weather.text)
 
-            .text-center
-              .h2.mtn= weather.tempDay
+            .h2.mtn.text-center= weather.tempDay
       - else
         .col-md-1
           .m-weather--item.pvxl
+            .h3.text-center= weather.dateHTML
+
             img.max-width src="/images/weathers/#{weather.icon}.png" alt=(weather.text)
 
             .text-center
-              .h3= weather.tempDay
+              .h4= weather.tempDay
               .small
                 span.celsius.mrm.opacity= weather.tempMin
                 span.celsius= weather.tempMax

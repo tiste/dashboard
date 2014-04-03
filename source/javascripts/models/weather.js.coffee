@@ -12,8 +12,8 @@ class App.Models.Weather extends Backbone.Model
   parse: (item) ->
     attrs           = {}
     attrs.city      = item.name
-    attrs.date      = new Date(item.dt * 1000)
-    attrs.dateHTML  = attrs.date.getDate() + '/' + (attrs.date.getMonth() + 1) + '/' + attrs.date.getFullYear()
+    attrs.date      = new Date(item.dt)
+    attrs.dateHTML  = moment.unix(item.dt).lang('fr').format('dddd')
     attrs.icon      = item.weather[0].icon.slice(0, -1)
     attrs.tempDay   = item.temp.day.toFixed(1)
     attrs.tempMax   = item.temp.max.toFixed(1)

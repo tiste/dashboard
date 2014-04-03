@@ -5,3 +5,4 @@ class App.Routers.Dashboard extends Backbone.Router
   index: ->
     view = new App.Views.DashboardIndex
     $('#container').html(view.render().el)
+    clock()

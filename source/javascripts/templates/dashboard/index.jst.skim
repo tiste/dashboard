@@ -7,4 +7,5 @@
           .h4.text-center En cours de chargement
 
 .container-fluid.pln.prn
+  .m-widget--clock
   .m-widget--weather.pos-absolute

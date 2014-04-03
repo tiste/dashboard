@@ -3,8 +3,8 @@ class App.Collections.Weathers extends Backbone.Collection
 
   model: App.Models.Weather
 
-  comparator: (m) ->
-    return m.get('date').getTime()
+  comparator: (w) ->
+    return w.get('date').getTime()
 
   parse: (response) ->
     items = response.list
