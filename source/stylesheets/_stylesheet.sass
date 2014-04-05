@@ -7,6 +7,9 @@
 @mixin icon($name, $size: 100)
   background-image: url(/images/icons/#{$name}-#{$size}.png)
 
+html, body
+  height: 100%
+
 body
   color: #FEFEFE
 
@@ -26,6 +29,15 @@ body
 
 .opacity
   opacity: .7
+
+.opacity-high
+  opacity: .2
+
+.cover
+  @include background-size(cover)
+
+.contain
+  @include background-size(contain)
 
 [class^='m-icons']
   width: 60px

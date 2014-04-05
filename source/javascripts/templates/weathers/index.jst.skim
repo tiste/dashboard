@@ -13,7 +13,7 @@
 
                   img.max-width src="/images/weathers/#{weather.icon}.png" alt=(weather.text)
 
-                  .h2.mtn.text-center= weather.tempDay
+                  .h2.mtn.celsius.text-center= weather.tempDay
               - else
                 li.m-weather--item.pvxl
                   .h3.text-center= weather.dateHTML
@@ -21,7 +21,7 @@
                   img.max-width src="/images/weathers/#{weather.icon}.png" alt=(weather.text)
 
                   .text-center
-                    .h4= weather.tempDay
+                    .h4.celsius= weather.tempDay
                     .small
-                      span.celsius.mrm.opacity= weather.tempMin
-                      span.celsius= weather.tempMax
+                      span.mrm.opacity= weather.tempMin
+                      span= weather.tempMax
