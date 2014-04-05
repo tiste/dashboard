@@ -10,3 +10,14 @@
     date = moment().lang('fr')
     clock.html('<span class="m-clock--hour">' + date.format('H:mm:ss') + '</span><br><span class="m-clock--date opacity">' + date.format('dddd Do MMMM') + '</span>')
   , 1000)
+
+@setCity = (city) ->
+  if localStorage && city
+    localStorage['city'] = city
+
+@getCity = ->
+  if localStorage
+    if localStorage['city']
+      return localStorage['city'] + ',fr'
+
+  'Paris,fr'

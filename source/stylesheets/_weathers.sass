@@ -1,11 +1,28 @@
 .m-widget--weather
-  bottom: 20px
+  position: absolute
+  bottom: 10px
 
 .m-weather
 
+.m-weather--input
+  @extend .h3
+  @extend .text-center
+  color: inherit
+  font-size: 24px
+  background-color: rgba(0, 0, 0, 0)
+
 .m-weather--container
+  ul
+    list-style: none
+    width: 60%
+    margin: auto
 
 .m-weather--item
+  float: left
+  width: 13%
+
+  &:first-child
+    width: 22%
 
 .celsius:after
   content: 'ºC'

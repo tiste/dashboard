@@ -2,7 +2,7 @@ class App.Views.WeathersIndex extends Backbone.View
   template: JST['templates/weathers/index']
 
   events:
-    'blur .m-weather--city': 'refetch'
+    'blur .m-weather--input': 'refetch'
     'submit .m-weather form': 'refetch'
 
   initialize: ->
@@ -12,7 +12,9 @@ class App.Views.WeathersIndex extends Backbone.View
     e.preventDefault()
 
     weathers  = new App.Collections.Weathers()
-    city      = @$('.m-weather--city').val() || 'Paris'
+
+    setCity @$('.m-weather--input').val()
+    city = getCity()
 
     weathers.fetch
       data:
@@ -22,6 +24,7 @@ class App.Views.WeathersIndex extends Backbone.View
       dataType: 'jsonp'
       success: =>
         @collection = weathers
+        setCity weathers.at(0).get('city')
         @render()
 
   render: =>

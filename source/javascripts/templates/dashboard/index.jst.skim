@@ -8,4 +8,4 @@
 
 .container-fluid.pln.prn
   .m-widget--clock
-  .m-widget--weather.pos-absolute
+  .m-widget--weather

@@ -39,12 +39,12 @@ class App.Views.DashboardIndex extends Backbone.View
         @$('.m-search--results').stop().animate scrollTop: newSelectedPosition, 100
 
   loadWidgets: =>
-    weathers  = new App.Collections.Weathers()
+    weathers = new App.Collections.Weathers()
 
     weathers.fetch
       data:
         lang: 'fr'
-        q: 'Paris'
+        q: getCity()
         units: 'metric'
       dataType: 'jsonp'
       success: =>
