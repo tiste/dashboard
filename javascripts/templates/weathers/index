@@ -108,7 +108,7 @@
             }
             _buf += " class=\"max-width\" src=\"/images/weathers/";
             _buf += this.escape(weather.icon);
-            _buf += ".png\" /><div class=\"h2 mtn text-center\">";
+            _buf += ".png\" /><div class=\"h2 mtn celsius text-center\">";
             _buf += this.escape(weather.tempDay);
             return _buf += "</div></li>";
           } else {
@@ -130,11 +130,11 @@
             }
             _buf += " class=\"max-width\" src=\"/images/weathers/";
             _buf += this.escape(weather.icon);
-            _buf += ".png\" /><div class=\"text-center\"><div class=\"h4\">";
+            _buf += ".png\" /><div class=\"text-center\"><div class=\"h4 celsius\">";
             _buf += this.escape(weather.tempDay);
-            _buf += "</div><div class=\"small\"><span class=\"celsius mrm opacity\">";
+            _buf += "</div><div class=\"small\"><span class=\"mrm opacity\">";
             _buf += this.escape(weather.tempMin);
-            _buf += "</span><span class=\"celsius\">";
+            _buf += "</span><span>";
             _buf += this.escape(weather.tempMax);
             return _buf += "</span></div></div></li>";
           }
