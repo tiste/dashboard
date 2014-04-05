@@ -10,7 +10,6 @@ class App.Views.DashboardIndex extends Backbone.View
   initialize: ->
     _.bindAll @, 'search'
     $(document).bind 'keydown', @displaySearch
-    @loadWidgets()
 
   displaySearch: (e) =>
     if isChar(e) && e.target.tagName.toLowerCase() isnt 'input'
@@ -40,6 +39,11 @@ class App.Views.DashboardIndex extends Backbone.View
 
   loadWidgets: =>
     weathers = new App.Collections.Weathers()
+    settings = new App.Models.Settings id: 1
+    settings.fetch()
+
+    settingsView  = new App.Views.Settings model: settings
+    @$('.m-widget--settings').html(settingsView.render().el)
 
     weathers.fetch
       data:
@@ -47,7 +51,7 @@ class App.Views.DashboardIndex extends Backbone.View
         q: getCity()
         units: 'metric'
       dataType: 'jsonp'
-      success: =>
+      success: ->
         view = new App.Views.WeathersIndex collection: weathers
         @$('.m-widget--weather').html(view.render().el)
 
@@ -70,4 +74,5 @@ class App.Views.DashboardIndex extends Backbone.View
   render: =>
     $(@el).html(@template)
     @$('.m-overlay').hide()
+    @loadWidgets()
     @

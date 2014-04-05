@@ -9,6 +9,6 @@ class App.Views.Google extends Backbone.View
   redirect: ->
     goTo(@model.get('url'))
 
-  render: ->
+  render: =>
     $(@el).html(@template(@model.toJSON()))
     @

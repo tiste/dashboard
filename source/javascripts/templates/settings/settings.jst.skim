@@ -1,0 +1,6 @@
+- $('body').css 'background-image': 'url(' + @background + ')'
+
+form
+  .form-group
+    input type='file' class='form-control input-lg m-settings--background'
+
