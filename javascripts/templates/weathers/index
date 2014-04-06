@@ -75,70 +75,72 @@
         var _buf;
         _buf = '';
         _buf += "<div class=\"m-weather\"><div class=\"m-weather--container\"><div class=\"container-fluid\"><div class=\"row\"><div class=\"col-md-12\"><ul class=\"clearfix pln\">";
-        _.each(this.weathers, function(weather, i) {
-          var _skim_codeattributes1, _skim_codeattributes2, _skim_codeattributes3;
-          if (i === 0) {
-            _buf += "<li class=\"m-weather--item\"><form><div class=\"form-group\"><input class=\"form-control input-lg m-weather--input\" type=\"text\"";
-            _skim_codeattributes1 = weather.city;
-            switch (_skim_codeattributes1) {
-              case true:
-                _buf += " value=\"value\"";
-                break;
-              case false:
-              case null:
-                break;
-              default:
-                _buf += " value=\"";
-                _buf += this.escape(_skim_codeattributes1);
-                _buf += "\"";
+        _(this.weathers).each((function(_this) {
+          return function(weather, i) {
+            var _skim_codeattributes1, _skim_codeattributes2, _skim_codeattributes3;
+            if (i === 0) {
+              _buf += "<li class=\"m-weather--item\"><form><div class=\"form-group\"><input class=\"form-control input-lg m-weather--input\" type=\"text\"";
+              _skim_codeattributes1 = _this.safe(weather.city);
+              switch (_skim_codeattributes1) {
+                case true:
+                  _buf += " value=\"value\"";
+                  break;
+                case false:
+                case null:
+                  break;
+                default:
+                  _buf += " value=\"";
+                  _buf += _this.escape(_skim_codeattributes1);
+                  _buf += "\"";
+              }
+              _buf += " /></div></form><img";
+              _skim_codeattributes2 = weather.text;
+              switch (_skim_codeattributes2) {
+                case true:
+                  _buf += " alt=\"alt\"";
+                  break;
+                case false:
+                case null:
+                  break;
+                default:
+                  _buf += " alt=\"";
+                  _buf += _this.escape(_skim_codeattributes2);
+                  _buf += "\"";
+              }
+              _buf += " class=\"max-width\" src=\"/images/weathers/";
+              _buf += _this.escape(weather.icon);
+              _buf += ".png\" /><div class=\"h2 mtn celsius text-center\">";
+              _buf += _this.escape(weather.tempDay);
+              return _buf += "</div></li>";
+            } else {
+              _buf += "<li class=\"m-weather--item pvxl\"><div class=\"h3 text-center\">";
+              _buf += _this.escape(weather.dateHTML);
+              _buf += "</div><img";
+              _skim_codeattributes3 = weather.text;
+              switch (_skim_codeattributes3) {
+                case true:
+                  _buf += " alt=\"alt\"";
+                  break;
+                case false:
+                case null:
+                  break;
+                default:
+                  _buf += " alt=\"";
+                  _buf += _this.escape(_skim_codeattributes3);
+                  _buf += "\"";
+              }
+              _buf += " class=\"max-width\" src=\"/images/weathers/";
+              _buf += _this.escape(weather.icon);
+              _buf += ".png\" /><div class=\"text-center\"><div class=\"h4 celsius\">";
+              _buf += _this.escape(weather.tempDay);
+              _buf += "</div><div class=\"small\"><span class=\"mrm opacity\">";
+              _buf += _this.escape(weather.tempMin);
+              _buf += "</span><span>";
+              _buf += _this.escape(weather.tempMax);
+              return _buf += "</span></div></div></li>";
             }
-            _buf += " /></div></form><img";
-            _skim_codeattributes2 = weather.text;
-            switch (_skim_codeattributes2) {
-              case true:
-                _buf += " alt=\"alt\"";
-                break;
-              case false:
-              case null:
-                break;
-              default:
-                _buf += " alt=\"";
-                _buf += this.escape(_skim_codeattributes2);
-                _buf += "\"";
-            }
-            _buf += " class=\"max-width\" src=\"/images/weathers/";
-            _buf += this.escape(weather.icon);
-            _buf += ".png\" /><div class=\"h2 mtn celsius text-center\">";
-            _buf += this.escape(weather.tempDay);
-            return _buf += "</div></li>";
-          } else {
-            _buf += "<li class=\"m-weather--item pvxl\"><div class=\"h3 text-center\">";
-            _buf += this.escape(weather.dateHTML);
-            _buf += "</div><img";
-            _skim_codeattributes3 = weather.text;
-            switch (_skim_codeattributes3) {
-              case true:
-                _buf += " alt=\"alt\"";
-                break;
-              case false:
-              case null:
-                break;
-              default:
-                _buf += " alt=\"";
-                _buf += this.escape(_skim_codeattributes3);
-                _buf += "\"";
-            }
-            _buf += " class=\"max-width\" src=\"/images/weathers/";
-            _buf += this.escape(weather.icon);
-            _buf += ".png\" /><div class=\"text-center\"><div class=\"h4 celsius\">";
-            _buf += this.escape(weather.tempDay);
-            _buf += "</div><div class=\"small\"><span class=\"mrm opacity\">";
-            _buf += this.escape(weather.tempMin);
-            _buf += "</span><span>";
-            _buf += this.escape(weather.tempMax);
-            return _buf += "</span></div></div></li>";
-          }
-        });
+          };
+        })(this));
         _buf += "</ul></div></div></div></div></div>";
         return _buf;
       });

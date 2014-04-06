@@ -1,4 +1,4 @@
-(function() { this.JST || (this.JST = {}); this.JST["templates/googles/index"] = (function() {
+(function() { this.JST || (this.JST = {}); this.JST["templates/settings/settings"] = (function() {
     this.Skim = {
       access: function(name) {
         var value;
@@ -72,9 +72,12 @@
         context = {};
       }
       return Skim.withContext.call({}, context, function() {
-        var item, _buf, _i, _j, _len, _len1, _skim_codeattributes1;
+        var item, _buf, _i, _j, _len, _len1, _ref, _ref1, _skim_codeattributes1, _skim_codeattributes2, _skim_codeattributes3;
         _buf = '';
-        _buf += "<div class=\"m-overlay--google transparent ";
+        $('body').css({
+          'background-image': 'url(' + this.background + ')'
+        });
+        _buf += "<div class=\"m-settings--icon pos-absolute clickable\"><i class=\"h1 mbn mrx glyphicon glyphicon-wrench\"></i></div><div class=\"m-overlay--settings transparent ";
         _skim_codeattributes1 = shuffleColor();
         if (this.isArray(_skim_codeattributes1)) {
           _skim_codeattributes1 = this.flatten(_skim_codeattributes1);
@@ -94,7 +97,39 @@
         } else {
           _buf += this.escape(_skim_codeattributes1);
         }
-        _buf += "\"><div class=\"container mtl\"><form class=\"m-google\"><div class=\"form-group\"><input class=\"form-control input-lg m-google--input\" type=\"text\" /><div class=\"m-google--search white pos-absolute-center\"><div class=\"h4 text-center\">En cours de chargement</div></div></div></form></div></div>";
+        _buf += "\"><form class=\"pos-absolute-center\"><div class=\"form-group\"><label class=\"h2\" for=\"m-settings--background\">Votre plus belle photo de voyage</label><input class=\"form-control input-lg m-settings--background\" id=\"m-settings--background\" type=\"file\" /></div><div class=\"form-group\"><label class=\"h2\" for=\"m-settings--lang\">Langue</label><select class=\"form-control m-settings--lang\" id=\"m-settings--lang\"><option";
+        _skim_codeattributes2 = (_ref = this.lang === 'fr') != null ? _ref : {
+          'selected': false
+        };
+        switch (_skim_codeattributes2) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes2);
+            _buf += "\"";
+        }
+        _buf += " value=\"fr\">Français</option><option";
+        _skim_codeattributes3 = (_ref1 = this.lang === 'en') != null ? _ref1 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes3) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes3);
+            _buf += "\"";
+        }
+        _buf += " value=\"en\">English</option></select></div></form></div>";
         return _buf;
       });
     };
