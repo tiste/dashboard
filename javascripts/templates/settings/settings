@@ -97,7 +97,7 @@
         } else {
           _buf += this.escape(_skim_codeattributes1);
         }
-        _buf += "\"><form class=\"pos-absolute-center\"><div class=\"form-group\"><label class=\"h2\" for=\"m-settings--background\">Votre plus belle photo de voyage</label><input class=\"form-control input-lg m-settings--background\" id=\"m-settings--background\" type=\"file\" /></div><div class=\"form-group\"><label class=\"h2\" for=\"m-settings--lang\">Langue</label><select class=\"form-control m-settings--lang\" id=\"m-settings--lang\"><option";
+        _buf += "\"><form class=\"pos-absolute-center\"><div class=\"form-group\"><label class=\"h2\" for=\"m-settings--background\">Votre plus belle photo de voyage</label><div class=\"input-group\"><input class=\"form-control input-lg m-settings--background\" id=\"m-settings--background\" type=\"file\" /><span class=\"input-group-btn\"><button class=\"btn btn-danger btn-lg m-settings--background--cancel\" type=\"button\">&times;</button></span></div></div><div class=\"form-group\"><label class=\"h2\" for=\"m-settings--lang\">Langue</label><select class=\"form-control m-settings--lang\" id=\"m-settings--lang\"><option";
         _skim_codeattributes2 = (_ref = this.lang === 'fr') != null ? _ref : {
           'selected': false
         };
