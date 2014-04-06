@@ -56,3 +56,11 @@
 
 @shuffleColor = ->
   _(['green', 'blue', 'black', 'yellow', 'orange', 'red', 'gray']).shuffle()[0]
+
+$(window).load ->
+  if localStorage
+    unless localStorage['tips']
+      localStorage['tips'] = true
+      $('body').chardinJs('start')
+  else
+    alert 'Vous devez utiliser un navigateur récent tel que Google Chrome pour profiter au mieux de toutes les fonctionnalités'

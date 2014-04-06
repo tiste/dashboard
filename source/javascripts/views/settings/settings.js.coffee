@@ -12,6 +12,7 @@ class App.Views.Settings extends Backbone.View
     'change #m-settings--lang--weather': 'setWeatherLang'
     'click .m-overlay--settings': 'closeSettings'
     'click .m-settings--background--cancel': 'cancelBackground'
+    'click .m-settings--help': 'openHelp'
     'click .m-settings--icon': 'openSettings'
 
   cancelBackground: =>
@@ -22,6 +23,10 @@ class App.Views.Settings extends Backbone.View
       @$('.m-overlay--settings').hide()
     else unless e
       @$('.m-overlay--settings').hide()
+
+  openHelp: =>
+    @closeSettings()
+    $('body').chardinJs('start')
 
   openSettings: =>
     @$('.m-overlay--settings').show()

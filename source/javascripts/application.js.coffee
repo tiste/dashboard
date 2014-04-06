@@ -2,7 +2,8 @@
 #= require underscore
 #= require backbone
 #= require backbone.localStorage
-#= require momentjs/min/moment-with-langs.js
+#= require momentjs/min/moment-with-langs
+#= require chardin.js/chardinjs
 #= require javascript
 #= require app
 #= require_tree ./templates

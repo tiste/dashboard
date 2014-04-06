@@ -9,7 +9,7 @@
                 li.m-weather--item
                   form
                     .form-group
-                      input type='text' class='form-control input-lg m-weather--input' value=(@safe weather.city)
+                      input type='text' class='form-control input-lg m-weather--input' data-intro='Modifiez la ville de la météo' data-position='left' value=(@safe weather.city)
 
                   img.max-width src="/images/weathers/#{weather.icon}.png" alt=(weather.text)
 

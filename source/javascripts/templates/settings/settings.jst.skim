@@ -1,6 +1,6 @@
 - $('body').css 'background-image': 'url(' + @background + ')'
 
-.m-settings--icon.pos-absolute.clickable
+.m-settings--icon.pos-absolute.clickable data-intro='Accèdez aux différents réglages' data-position='top'
   i.h1.mbn.mrx.glyphicon.glyphicon-wrench
 
 .m-overlay--settings.transparent class=(shuffleColor())
@@ -267,3 +267,7 @@
         option value='ye' selected=((@weatherLang == 'ye') ? 'selected' : false) Yemen
         option value='zm' selected=((@weatherLang == 'zm') ? 'selected' : false) Zambia
         option value='zw' selected=((@weatherLang == 'zw') ? 'selected' : false) Zimbabwe
+
+    .form-group
+      .h2.mtxl Aide
+      button.btn.btn-info.btn-lg.m-settings--help type='button' Jouer les conseils

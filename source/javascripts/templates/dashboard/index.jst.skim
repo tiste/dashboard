@@ -1,4 +1,5 @@
 .container-fluid.pln.prn
+  .m-widget--help.pull-center.pos-relative style='width: 800px; height: 50px; top: 20px;' data-intro="Tapez n'importe où pour chercher" data-position='bottom'
   .m-widget--google
   .m-widget--clock
   .m-widget--weather
