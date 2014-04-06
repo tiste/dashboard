@@ -1,5 +1,6 @@
 activate :gzip
 activate :livereload
+activate :meta_tags
 
 activate :deploy do |deploy|
   deploy.method       = :git
