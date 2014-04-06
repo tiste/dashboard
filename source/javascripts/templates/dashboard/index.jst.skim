@@ -1,12 +1,5 @@
-.m-overlay--dashboard.transparent class=(shuffleColor())
-  .container.mtl
-    form.m-search
-      .form-group
-        input type='text' class='form-control input-lg m-search--input'
-        .m-search--results.white.pos-absolute-center
-          .h4.text-center En cours de chargement
-
 .container-fluid.pln.prn
+  .m-widget--google
   .m-widget--clock
   .m-widget--weather
   .m-widget--settings

@@ -1,1 +1,7 @@
-.m-search--results--list
+.m-overlay--google.transparent class=(shuffleColor())
+  .container.mtl
+    form.m-google
+      .form-group
+        input type='text' class='form-control input-lg m-google--input'
+        .m-google--search.white.pos-absolute-center
+          .h4.text-center En cours de chargement

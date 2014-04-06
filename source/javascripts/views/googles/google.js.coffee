@@ -1,7 +1,7 @@
 class App.Views.Google extends Backbone.View
   template: JST['templates/googles/google']
 
-  className: 'm-search--results--item'
+  className: 'm-google--search--item'
 
   events:
     'click': 'redirect'

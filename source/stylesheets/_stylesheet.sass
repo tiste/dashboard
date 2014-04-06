@@ -80,15 +80,3 @@ body
   bottom: 0
   left: 0
   color: #333
-
-.m-search--results
-  @include border-top-radius(5px)
-  @include border-bottom-radius(5px)
-  overflow-x: hidden
-  overflow-y: scroll
-
-.m-search--results--item
-  @include transition (background-color .5s ease)
-
-  &:hover, &.selected
-    background-color: darken(#FFFFFF, 10%)

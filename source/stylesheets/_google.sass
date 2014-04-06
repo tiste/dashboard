@@ -1,0 +1,11 @@
+.m-google--search
+  @include border-top-radius(5px)
+  @include border-bottom-radius(5px)
+  overflow-x: hidden
+  overflow-y: scroll
+
+.m-google--search--item
+  @include transition(background-color .5s ease)
+
+  &:hover, &.selected
+    background-color: darken(#FFFFFF, 10%)
