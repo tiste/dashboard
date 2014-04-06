@@ -20,9 +20,10 @@ body
   left: 50%
   width: 70%
   max-height: 50%
-  overflow-x: hidden
-  overflow-y: scroll
   @include transform(translate(-50%, -50%))
+
+.min-height
+  height: 100%
 
 .clickable
   cursor: pointer
@@ -31,13 +32,16 @@ body
   opacity: .7
 
 .opacity-high
-  opacity: .2
+  opacity: .4
 
 .cover
   @include background-size(cover)
 
 .contain
   @include background-size(contain)
+
+.z-index--sm
+  z-index: -1
 
 [class^='m-icons']
   width: 60px
@@ -67,9 +71,8 @@ body
 .m-icons--twitter--large
   @include icon(twitter, 350)
 
-.m-overlay
+[class^='m-overlay']
   z-index: 10
-  background: rgba(0, 0, 0, 0.8)
   margin: auto
   position: absolute
   top: 0
@@ -81,6 +84,8 @@ body
 .m-search--results
   @include border-top-radius(5px)
   @include border-bottom-radius(5px)
+  overflow-x: hidden
+  overflow-y: scroll
 
 .m-search--results--item
   @include transition (background-color .5s ease)

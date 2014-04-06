@@ -13,7 +13,7 @@ class App.Models.Weather extends Backbone.Model
     attrs           = {}
     attrs.city      = item.name
     attrs.date      = new Date(item.dt * 1000)
-    attrs.dateHTML  = moment.unix(item.dt).lang('fr').format('dddd')
+    attrs.dateHTML  = moment.unix(item.dt).lang(window.App.Settings.get('lang')).format('dddd')
     attrs.icon      = item.weather[0].icon.slice(0, -1)
     attrs.tempDay   = item.temp.day.toFixed(1)
     attrs.tempMax   = item.temp.max.toFixed(1)

@@ -1,0 +1,16 @@
+- $('body').css 'background-image': 'url(' + @background + ')'
+
+.m-settings--icon.pos-absolute.clickable
+  i.h1.mbn.mrx.glyphicon.glyphicon-wrench
+
+.m-overlay--settings.transparent class=(shuffleColor())
+  form.pos-absolute-center
+    .form-group
+      label.h2 for='m-settings--background' Votre plus belle photo de voyage
+      input type='file' id='m-settings--background' class='form-control input-lg m-settings--background'
+
+    .form-group
+      label.h2 for='m-settings--lang' Langue
+      select id='m-settings--lang' class='form-control m-settings--lang'
+        option value='fr' selected=((@lang == 'fr') ? 'selected' : false) Français
+        option value='en' selected=((@lang == 'en') ? 'selected' : false) English
