@@ -72,7 +72,7 @@
         context = {};
       }
       return Skim.withContext.call({}, context, function() {
-        var item, _buf, _i, _j, _len, _len1, _ref, _ref1, _skim_codeattributes1, _skim_codeattributes2, _skim_codeattributes3;
+        var item, _buf, _i, _j, _len, _len1, _ref, _ref1, _ref10, _ref100, _ref101, _ref102, _ref103, _ref104, _ref105, _ref106, _ref107, _ref108, _ref109, _ref11, _ref110, _ref111, _ref112, _ref113, _ref114, _ref115, _ref116, _ref117, _ref118, _ref119, _ref12, _ref120, _ref121, _ref122, _ref123, _ref124, _ref125, _ref126, _ref127, _ref128, _ref129, _ref13, _ref130, _ref131, _ref132, _ref133, _ref134, _ref135, _ref136, _ref137, _ref138, _ref139, _ref14, _ref140, _ref141, _ref142, _ref143, _ref144, _ref145, _ref146, _ref147, _ref148, _ref149, _ref15, _ref150, _ref151, _ref152, _ref153, _ref154, _ref155, _ref156, _ref157, _ref158, _ref159, _ref16, _ref160, _ref161, _ref162, _ref163, _ref164, _ref165, _ref166, _ref167, _ref168, _ref169, _ref17, _ref170, _ref171, _ref172, _ref173, _ref174, _ref175, _ref176, _ref177, _ref178, _ref179, _ref18, _ref180, _ref181, _ref182, _ref183, _ref184, _ref185, _ref186, _ref187, _ref188, _ref189, _ref19, _ref190, _ref191, _ref192, _ref193, _ref194, _ref195, _ref196, _ref197, _ref198, _ref199, _ref2, _ref20, _ref200, _ref201, _ref202, _ref203, _ref204, _ref205, _ref206, _ref207, _ref208, _ref209, _ref21, _ref210, _ref211, _ref212, _ref213, _ref214, _ref215, _ref216, _ref217, _ref218, _ref219, _ref22, _ref220, _ref221, _ref222, _ref223, _ref224, _ref225, _ref226, _ref227, _ref228, _ref229, _ref23, _ref230, _ref231, _ref232, _ref233, _ref234, _ref235, _ref236, _ref237, _ref238, _ref239, _ref24, _ref240, _ref241, _ref242, _ref243, _ref244, _ref245, _ref246, _ref247, _ref25, _ref26, _ref27, _ref28, _ref29, _ref3, _ref30, _ref31, _ref32, _ref33, _ref34, _ref35, _ref36, _ref37, _ref38, _ref39, _ref4, _ref40, _ref41, _ref42, _ref43, _ref44, _ref45, _ref46, _ref47, _ref48, _ref49, _ref5, _ref50, _ref51, _ref52, _ref53, _ref54, _ref55, _ref56, _ref57, _ref58, _ref59, _ref6, _ref60, _ref61, _ref62, _ref63, _ref64, _ref65, _ref66, _ref67, _ref68, _ref69, _ref7, _ref70, _ref71, _ref72, _ref73, _ref74, _ref75, _ref76, _ref77, _ref78, _ref79, _ref8, _ref80, _ref81, _ref82, _ref83, _ref84, _ref85, _ref86, _ref87, _ref88, _ref89, _ref9, _ref90, _ref91, _ref92, _ref93, _ref94, _ref95, _ref96, _ref97, _ref98, _ref99, _skim_codeattributes1, _skim_codeattributes10, _skim_codeattributes100, _skim_codeattributes101, _skim_codeattributes102, _skim_codeattributes103, _skim_codeattributes104, _skim_codeattributes105, _skim_codeattributes106, _skim_codeattributes107, _skim_codeattributes108, _skim_codeattributes109, _skim_codeattributes11, _skim_codeattributes110, _skim_codeattributes111, _skim_codeattributes112, _skim_codeattributes113, _skim_codeattributes114, _skim_codeattributes115, _skim_codeattributes116, _skim_codeattributes117, _skim_codeattributes118, _skim_codeattributes119, _skim_codeattributes12, _skim_codeattributes120, _skim_codeattributes121, _skim_codeattributes122, _skim_codeattributes123, _skim_codeattributes124, _skim_codeattributes125, _skim_codeattributes126, _skim_codeattributes127, _skim_codeattributes128, _skim_codeattributes129, _skim_codeattributes13, _skim_codeattributes130, _skim_codeattributes131, _skim_codeattributes132, _skim_codeattributes133, _skim_codeattributes134, _skim_codeattributes135, _skim_codeattributes136, _skim_codeattributes137, _skim_codeattributes138, _skim_codeattributes139, _skim_codeattributes14, _skim_codeattributes140, _skim_codeattributes141, _skim_codeattributes142, _skim_codeattributes143, _skim_codeattributes144, _skim_codeattributes145, _skim_codeattributes146, _skim_codeattributes147, _skim_codeattributes148, _skim_codeattributes149, _skim_codeattributes15, _skim_codeattributes150, _skim_codeattributes151, _skim_codeattributes152, _skim_codeattributes153, _skim_codeattributes154, _skim_codeattributes155, _skim_codeattributes156, _skim_codeattributes157, _skim_codeattributes158, _skim_codeattributes159, _skim_codeattributes16, _skim_codeattributes160, _skim_codeattributes161, _skim_codeattributes162, _skim_codeattributes163, _skim_codeattributes164, _skim_codeattributes165, _skim_codeattributes166, _skim_codeattributes167, _skim_codeattributes168, _skim_codeattributes169, _skim_codeattributes17, _skim_codeattributes170, _skim_codeattributes171, _skim_codeattributes172, _skim_codeattributes173, _skim_codeattributes174, _skim_codeattributes175, _skim_codeattributes176, _skim_codeattributes177, _skim_codeattributes178, _skim_codeattributes179, _skim_codeattributes18, _skim_codeattributes180, _skim_codeattributes181, _skim_codeattributes182, _skim_codeattributes183, _skim_codeattributes184, _skim_codeattributes185, _skim_codeattributes186, _skim_codeattributes187, _skim_codeattributes188, _skim_codeattributes189, _skim_codeattributes19, _skim_codeattributes190, _skim_codeattributes191, _skim_codeattributes192, _skim_codeattributes193, _skim_codeattributes194, _skim_codeattributes195, _skim_codeattributes196, _skim_codeattributes197, _skim_codeattributes198, _skim_codeattributes199, _skim_codeattributes2, _skim_codeattributes20, _skim_codeattributes200, _skim_codeattributes201, _skim_codeattributes202, _skim_codeattributes203, _skim_codeattributes204, _skim_codeattributes205, _skim_codeattributes206, _skim_codeattributes207, _skim_codeattributes208, _skim_codeattributes209, _skim_codeattributes21, _skim_codeattributes210, _skim_codeattributes211, _skim_codeattributes212, _skim_codeattributes213, _skim_codeattributes214, _skim_codeattributes215, _skim_codeattributes216, _skim_codeattributes217, _skim_codeattributes218, _skim_codeattributes219, _skim_codeattributes22, _skim_codeattributes220, _skim_codeattributes221, _skim_codeattributes222, _skim_codeattributes223, _skim_codeattributes224, _skim_codeattributes225, _skim_codeattributes226, _skim_codeattributes227, _skim_codeattributes228, _skim_codeattributes229, _skim_codeattributes23, _skim_codeattributes230, _skim_codeattributes231, _skim_codeattributes232, _skim_codeattributes233, _skim_codeattributes234, _skim_codeattributes235, _skim_codeattributes236, _skim_codeattributes237, _skim_codeattributes238, _skim_codeattributes239, _skim_codeattributes24, _skim_codeattributes240, _skim_codeattributes241, _skim_codeattributes242, _skim_codeattributes243, _skim_codeattributes244, _skim_codeattributes245, _skim_codeattributes246, _skim_codeattributes247, _skim_codeattributes248, _skim_codeattributes249, _skim_codeattributes25, _skim_codeattributes26, _skim_codeattributes27, _skim_codeattributes28, _skim_codeattributes29, _skim_codeattributes3, _skim_codeattributes30, _skim_codeattributes31, _skim_codeattributes32, _skim_codeattributes33, _skim_codeattributes34, _skim_codeattributes35, _skim_codeattributes36, _skim_codeattributes37, _skim_codeattributes38, _skim_codeattributes39, _skim_codeattributes4, _skim_codeattributes40, _skim_codeattributes41, _skim_codeattributes42, _skim_codeattributes43, _skim_codeattributes44, _skim_codeattributes45, _skim_codeattributes46, _skim_codeattributes47, _skim_codeattributes48, _skim_codeattributes49, _skim_codeattributes5, _skim_codeattributes50, _skim_codeattributes51, _skim_codeattributes52, _skim_codeattributes53, _skim_codeattributes54, _skim_codeattributes55, _skim_codeattributes56, _skim_codeattributes57, _skim_codeattributes58, _skim_codeattributes59, _skim_codeattributes6, _skim_codeattributes60, _skim_codeattributes61, _skim_codeattributes62, _skim_codeattributes63, _skim_codeattributes64, _skim_codeattributes65, _skim_codeattributes66, _skim_codeattributes67, _skim_codeattributes68, _skim_codeattributes69, _skim_codeattributes7, _skim_codeattributes70, _skim_codeattributes71, _skim_codeattributes72, _skim_codeattributes73, _skim_codeattributes74, _skim_codeattributes75, _skim_codeattributes76, _skim_codeattributes77, _skim_codeattributes78, _skim_codeattributes79, _skim_codeattributes8, _skim_codeattributes80, _skim_codeattributes81, _skim_codeattributes82, _skim_codeattributes83, _skim_codeattributes84, _skim_codeattributes85, _skim_codeattributes86, _skim_codeattributes87, _skim_codeattributes88, _skim_codeattributes89, _skim_codeattributes9, _skim_codeattributes90, _skim_codeattributes91, _skim_codeattributes92, _skim_codeattributes93, _skim_codeattributes94, _skim_codeattributes95, _skim_codeattributes96, _skim_codeattributes97, _skim_codeattributes98, _skim_codeattributes99;
         _buf = '';
         $('body').css({
           'background-image': 'url(' + this.background + ')'
@@ -129,7 +129,3943 @@
             _buf += this.escape(_skim_codeattributes3);
             _buf += "\"";
         }
-        _buf += " value=\"en\">English</option></select></div></form></div>";
+        _buf += " value=\"en\">English</option></select></div><div class=\"form-group\"><label class=\"h2\" for=\"m-settings--lang--weather\">Pays de la météo</label><select class=\"form-control m-settings--lang--weather\" id=\"m-settings--lang--weather\"><option";
+        _skim_codeattributes4 = (_ref2 = this.weatherLang === 'af') != null ? _ref2 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes4) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes4);
+            _buf += "\"";
+        }
+        _buf += " value=\"af\">Afghanistan</option><option";
+        _skim_codeattributes5 = (_ref3 = this.weatherLang === 'ax') != null ? _ref3 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes5) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes5);
+            _buf += "\"";
+        }
+        _buf += " value=\"ax\">&Aring;land Islands</option><option";
+        _skim_codeattributes6 = (_ref4 = this.weatherLang === 'al') != null ? _ref4 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes6) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes6);
+            _buf += "\"";
+        }
+        _buf += " value=\"al\">Albania</option><option";
+        _skim_codeattributes7 = (_ref5 = this.weatherLang === 'dz') != null ? _ref5 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes7) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes7);
+            _buf += "\"";
+        }
+        _buf += " value=\"dz\">Algeria</option><option";
+        _skim_codeattributes8 = (_ref6 = this.weatherLang === 'as') != null ? _ref6 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes8) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes8);
+            _buf += "\"";
+        }
+        _buf += " value=\"as\">American Samoa</option><option";
+        _skim_codeattributes9 = (_ref7 = this.weatherLang === 'ad') != null ? _ref7 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes9) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes9);
+            _buf += "\"";
+        }
+        _buf += " value=\"ad\">Andorra</option><option";
+        _skim_codeattributes10 = (_ref8 = this.weatherLang === 'ao') != null ? _ref8 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes10) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes10);
+            _buf += "\"";
+        }
+        _buf += " value=\"ao\">Angola</option><option";
+        _skim_codeattributes11 = (_ref9 = this.weatherLang === 'ai') != null ? _ref9 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes11) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes11);
+            _buf += "\"";
+        }
+        _buf += " value=\"ai\">Anguilla</option><option";
+        _skim_codeattributes12 = (_ref10 = this.weatherLang === 'aq') != null ? _ref10 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes12) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes12);
+            _buf += "\"";
+        }
+        _buf += " value=\"aq\">Antarctica</option><option";
+        _skim_codeattributes13 = (_ref11 = this.weatherLang === 'ag') != null ? _ref11 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes13) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes13);
+            _buf += "\"";
+        }
+        _buf += " value=\"ag\">Antigua and Barbuda</option><option";
+        _skim_codeattributes14 = (_ref12 = this.weatherLang === 'ar') != null ? _ref12 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes14) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes14);
+            _buf += "\"";
+        }
+        _buf += " value=\"ar\">Argentina</option><option";
+        _skim_codeattributes15 = (_ref13 = this.weatherLang === 'am') != null ? _ref13 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes15) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes15);
+            _buf += "\"";
+        }
+        _buf += " value=\"am\">Armenia</option><option";
+        _skim_codeattributes16 = (_ref14 = this.weatherLang === 'aw') != null ? _ref14 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes16) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes16);
+            _buf += "\"";
+        }
+        _buf += " value=\"aw\">Aruba</option><option";
+        _skim_codeattributes17 = (_ref15 = this.weatherLang === 'au') != null ? _ref15 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes17) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes17);
+            _buf += "\"";
+        }
+        _buf += " value=\"au\">Australia</option><option";
+        _skim_codeattributes18 = (_ref16 = this.weatherLang === 'at') != null ? _ref16 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes18) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes18);
+            _buf += "\"";
+        }
+        _buf += " value=\"at\">Austria</option><option";
+        _skim_codeattributes19 = (_ref17 = this.weatherLang === 'az') != null ? _ref17 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes19) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes19);
+            _buf += "\"";
+        }
+        _buf += " value=\"az\">Azerbaijan</option><option";
+        _skim_codeattributes20 = (_ref18 = this.weatherLang === 'bs') != null ? _ref18 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes20) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes20);
+            _buf += "\"";
+        }
+        _buf += " value=\"bs\">Bahamas</option><option";
+        _skim_codeattributes21 = (_ref19 = this.weatherLang === 'bh') != null ? _ref19 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes21) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes21);
+            _buf += "\"";
+        }
+        _buf += " value=\"bh\">Bahrain</option><option";
+        _skim_codeattributes22 = (_ref20 = this.weatherLang === 'bd') != null ? _ref20 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes22) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes22);
+            _buf += "\"";
+        }
+        _buf += " value=\"bd\">Bangladesh</option><option";
+        _skim_codeattributes23 = (_ref21 = this.weatherLang === 'bb') != null ? _ref21 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes23) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes23);
+            _buf += "\"";
+        }
+        _buf += " value=\"bb\">Barbados</option><option";
+        _skim_codeattributes24 = (_ref22 = this.weatherLang === 'by') != null ? _ref22 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes24) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes24);
+            _buf += "\"";
+        }
+        _buf += " value=\"by\">Belarus</option><option";
+        _skim_codeattributes25 = (_ref23 = this.weatherLang === 'be') != null ? _ref23 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes25) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes25);
+            _buf += "\"";
+        }
+        _buf += " value=\"be\">Belgium</option><option";
+        _skim_codeattributes26 = (_ref24 = this.weatherLang === 'bz') != null ? _ref24 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes26) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes26);
+            _buf += "\"";
+        }
+        _buf += " value=\"bz\">Belize</option><option";
+        _skim_codeattributes27 = (_ref25 = this.weatherLang === 'bj') != null ? _ref25 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes27) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes27);
+            _buf += "\"";
+        }
+        _buf += " value=\"bj\">Benin</option><option";
+        _skim_codeattributes28 = (_ref26 = this.weatherLang === 'bm') != null ? _ref26 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes28) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes28);
+            _buf += "\"";
+        }
+        _buf += " value=\"bm\">Bermuda</option><option";
+        _skim_codeattributes29 = (_ref27 = this.weatherLang === 'bt') != null ? _ref27 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes29) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes29);
+            _buf += "\"";
+        }
+        _buf += " value=\"bt\">Bhutan</option><option";
+        _skim_codeattributes30 = (_ref28 = this.weatherLang === 'bo') != null ? _ref28 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes30) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes30);
+            _buf += "\"";
+        }
+        _buf += " value=\"bo\">Bolivia, Plurinational State of</option><option";
+        _skim_codeattributes31 = (_ref29 = this.weatherLang === 'ba') != null ? _ref29 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes31) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes31);
+            _buf += "\"";
+        }
+        _buf += " value=\"ba\">Bosnia and Herzegovina</option><option";
+        _skim_codeattributes32 = (_ref30 = this.weatherLang === 'bw') != null ? _ref30 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes32) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes32);
+            _buf += "\"";
+        }
+        _buf += " value=\"bw\">Botswana</option><option";
+        _skim_codeattributes33 = (_ref31 = this.weatherLang === 'bv') != null ? _ref31 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes33) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes33);
+            _buf += "\"";
+        }
+        _buf += " value=\"bv\">Bouvet Island</option><option";
+        _skim_codeattributes34 = (_ref32 = this.weatherLang === 'br') != null ? _ref32 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes34) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes34);
+            _buf += "\"";
+        }
+        _buf += " value=\"br\">Brazil</option><option";
+        _skim_codeattributes35 = (_ref33 = this.weatherLang === 'io') != null ? _ref33 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes35) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes35);
+            _buf += "\"";
+        }
+        _buf += " value=\"io\">British Indian Ocean Territory</option><option";
+        _skim_codeattributes36 = (_ref34 = this.weatherLang === 'bn') != null ? _ref34 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes36) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes36);
+            _buf += "\"";
+        }
+        _buf += " value=\"bn\">Brunei Darussalam</option><option";
+        _skim_codeattributes37 = (_ref35 = this.weatherLang === 'bg') != null ? _ref35 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes37) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes37);
+            _buf += "\"";
+        }
+        _buf += " value=\"bg\">Bulgaria</option><option";
+        _skim_codeattributes38 = (_ref36 = this.weatherLang === 'bf') != null ? _ref36 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes38) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes38);
+            _buf += "\"";
+        }
+        _buf += " value=\"bf\">Burkina Faso</option><option";
+        _skim_codeattributes39 = (_ref37 = this.weatherLang === 'bi') != null ? _ref37 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes39) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes39);
+            _buf += "\"";
+        }
+        _buf += " value=\"bi\">Burundi</option><option";
+        _skim_codeattributes40 = (_ref38 = this.weatherLang === 'kh') != null ? _ref38 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes40) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes40);
+            _buf += "\"";
+        }
+        _buf += " value=\"kh\">Cambodia</option><option";
+        _skim_codeattributes41 = (_ref39 = this.weatherLang === 'cm') != null ? _ref39 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes41) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes41);
+            _buf += "\"";
+        }
+        _buf += " value=\"cm\">Cameroon</option><option";
+        _skim_codeattributes42 = (_ref40 = this.weatherLang === 'ca') != null ? _ref40 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes42) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes42);
+            _buf += "\"";
+        }
+        _buf += " value=\"ca\">Canada</option><option";
+        _skim_codeattributes43 = (_ref41 = this.weatherLang === 'cv') != null ? _ref41 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes43) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes43);
+            _buf += "\"";
+        }
+        _buf += " value=\"cv\">Cape Verde</option><option";
+        _skim_codeattributes44 = (_ref42 = this.weatherLang === 'ky') != null ? _ref42 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes44) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes44);
+            _buf += "\"";
+        }
+        _buf += " value=\"ky\">Cayman Islands</option><option";
+        _skim_codeattributes45 = (_ref43 = this.weatherLang === 'cf') != null ? _ref43 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes45) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes45);
+            _buf += "\"";
+        }
+        _buf += " value=\"cf\">Central African Republic</option><option";
+        _skim_codeattributes46 = (_ref44 = this.weatherLang === 'td') != null ? _ref44 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes46) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes46);
+            _buf += "\"";
+        }
+        _buf += " value=\"td\">Chad</option><option";
+        _skim_codeattributes47 = (_ref45 = this.weatherLang === 'cl') != null ? _ref45 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes47) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes47);
+            _buf += "\"";
+        }
+        _buf += " value=\"cl\">Chile</option><option";
+        _skim_codeattributes48 = (_ref46 = this.weatherLang === 'cn') != null ? _ref46 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes48) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes48);
+            _buf += "\"";
+        }
+        _buf += " value=\"cn\">China</option><option";
+        _skim_codeattributes49 = (_ref47 = this.weatherLang === 'cx') != null ? _ref47 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes49) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes49);
+            _buf += "\"";
+        }
+        _buf += " value=\"cx\">Christmas Island</option><option";
+        _skim_codeattributes50 = (_ref48 = this.weatherLang === 'cc') != null ? _ref48 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes50) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes50);
+            _buf += "\"";
+        }
+        _buf += " value=\"cc\">Cocos (Keeling) Islands</option><option";
+        _skim_codeattributes51 = (_ref49 = this.weatherLang === 'co') != null ? _ref49 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes51) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes51);
+            _buf += "\"";
+        }
+        _buf += " value=\"co\">Colombia</option><option";
+        _skim_codeattributes52 = (_ref50 = this.weatherLang === 'km') != null ? _ref50 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes52) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes52);
+            _buf += "\"";
+        }
+        _buf += " value=\"km\">Comoros</option><option";
+        _skim_codeattributes53 = (_ref51 = this.weatherLang === 'cg') != null ? _ref51 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes53) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes53);
+            _buf += "\"";
+        }
+        _buf += " value=\"cg\">Congo</option><option";
+        _skim_codeattributes54 = (_ref52 = this.weatherLang === 'cd') != null ? _ref52 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes54) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes54);
+            _buf += "\"";
+        }
+        _buf += " value=\"cd\">Congo, the Democratic Republic of the</option><option";
+        _skim_codeattributes55 = (_ref53 = this.weatherLang === 'ck') != null ? _ref53 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes55) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes55);
+            _buf += "\"";
+        }
+        _buf += " value=\"ck\">Cook Islands</option><option";
+        _skim_codeattributes56 = (_ref54 = this.weatherLang === 'cr') != null ? _ref54 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes56) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes56);
+            _buf += "\"";
+        }
+        _buf += " value=\"cr\">Costa Rica</option><option";
+        _skim_codeattributes57 = (_ref55 = this.weatherLang === 'ci') != null ? _ref55 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes57) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes57);
+            _buf += "\"";
+        }
+        _buf += " value=\"ci\">C&ocirc;te d&rsquo;Ivoire</option><option";
+        _skim_codeattributes58 = (_ref56 = this.weatherLang === 'hr') != null ? _ref56 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes58) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes58);
+            _buf += "\"";
+        }
+        _buf += " value=\"hr\">Croatia</option><option";
+        _skim_codeattributes59 = (_ref57 = this.weatherLang === 'cu') != null ? _ref57 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes59) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes59);
+            _buf += "\"";
+        }
+        _buf += " value=\"cu\">Cuba</option><option";
+        _skim_codeattributes60 = (_ref58 = this.weatherLang === 'cy') != null ? _ref58 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes60) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes60);
+            _buf += "\"";
+        }
+        _buf += " value=\"cy\">Cyprus</option><option";
+        _skim_codeattributes61 = (_ref59 = this.weatherLang === 'cz') != null ? _ref59 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes61) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes61);
+            _buf += "\"";
+        }
+        _buf += " value=\"cz\">Czech Republic</option><option";
+        _skim_codeattributes62 = (_ref60 = this.weatherLang === 'dk') != null ? _ref60 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes62) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes62);
+            _buf += "\"";
+        }
+        _buf += " value=\"dk\">Denmark</option><option";
+        _skim_codeattributes63 = (_ref61 = this.weatherLang === 'dj') != null ? _ref61 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes63) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes63);
+            _buf += "\"";
+        }
+        _buf += " value=\"dj\">Djibouti</option><option";
+        _skim_codeattributes64 = (_ref62 = this.weatherLang === 'dm') != null ? _ref62 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes64) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes64);
+            _buf += "\"";
+        }
+        _buf += " value=\"dm\">Dominica</option><option";
+        _skim_codeattributes65 = (_ref63 = this.weatherLang === 'do') != null ? _ref63 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes65) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes65);
+            _buf += "\"";
+        }
+        _buf += " value=\"do\">Dominican Republic</option><option";
+        _skim_codeattributes66 = (_ref64 = this.weatherLang === 'ec') != null ? _ref64 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes66) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes66);
+            _buf += "\"";
+        }
+        _buf += " value=\"ec\">Ecuador</option><option";
+        _skim_codeattributes67 = (_ref65 = this.weatherLang === 'eg') != null ? _ref65 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes67) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes67);
+            _buf += "\"";
+        }
+        _buf += " value=\"eg\">Egypt</option><option";
+        _skim_codeattributes68 = (_ref66 = this.weatherLang === 'sv') != null ? _ref66 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes68) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes68);
+            _buf += "\"";
+        }
+        _buf += " value=\"sv\">El Salvador</option><option";
+        _skim_codeattributes69 = (_ref67 = this.weatherLang === 'gq') != null ? _ref67 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes69) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes69);
+            _buf += "\"";
+        }
+        _buf += " value=\"gq\">Equatorial Guinea</option><option";
+        _skim_codeattributes70 = (_ref68 = this.weatherLang === 'er') != null ? _ref68 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes70) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes70);
+            _buf += "\"";
+        }
+        _buf += " value=\"er\">Eritrea</option><option";
+        _skim_codeattributes71 = (_ref69 = this.weatherLang === 'ee') != null ? _ref69 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes71) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes71);
+            _buf += "\"";
+        }
+        _buf += " value=\"ee\">Estonia</option><option";
+        _skim_codeattributes72 = (_ref70 = this.weatherLang === 'et') != null ? _ref70 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes72) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes72);
+            _buf += "\"";
+        }
+        _buf += " value=\"et\">Ethiopia</option><option";
+        _skim_codeattributes73 = (_ref71 = this.weatherLang === 'fk') != null ? _ref71 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes73) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes73);
+            _buf += "\"";
+        }
+        _buf += " value=\"fk\">Falkland Islands (Malvinas)</option><option";
+        _skim_codeattributes74 = (_ref72 = this.weatherLang === 'fo') != null ? _ref72 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes74) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes74);
+            _buf += "\"";
+        }
+        _buf += " value=\"fo\">Faroe Islands</option><option";
+        _skim_codeattributes75 = (_ref73 = this.weatherLang === 'fj') != null ? _ref73 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes75) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes75);
+            _buf += "\"";
+        }
+        _buf += " value=\"fj\">Fiji</option><option";
+        _skim_codeattributes76 = (_ref74 = this.weatherLang === 'fi') != null ? _ref74 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes76) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes76);
+            _buf += "\"";
+        }
+        _buf += " value=\"fi\">Finland</option><option";
+        _skim_codeattributes77 = (_ref75 = this.weatherLang === 'fr') != null ? _ref75 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes77) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes77);
+            _buf += "\"";
+        }
+        _buf += " value=\"fr\">France</option><option";
+        _skim_codeattributes78 = (_ref76 = this.weatherLang === 'gf') != null ? _ref76 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes78) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes78);
+            _buf += "\"";
+        }
+        _buf += " value=\"gf\">French Guiana</option><option";
+        _skim_codeattributes79 = (_ref77 = this.weatherLang === 'pf') != null ? _ref77 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes79) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes79);
+            _buf += "\"";
+        }
+        _buf += " value=\"pf\">French Polynesia</option><option";
+        _skim_codeattributes80 = (_ref78 = this.weatherLang === 'tf') != null ? _ref78 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes80) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes80);
+            _buf += "\"";
+        }
+        _buf += " value=\"tf\">French Southern Territories</option><option";
+        _skim_codeattributes81 = (_ref79 = this.weatherLang === 'ga') != null ? _ref79 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes81) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes81);
+            _buf += "\"";
+        }
+        _buf += " value=\"ga\">Gabon</option><option";
+        _skim_codeattributes82 = (_ref80 = this.weatherLang === 'gm') != null ? _ref80 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes82) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes82);
+            _buf += "\"";
+        }
+        _buf += " value=\"gm\">Gambia</option><option";
+        _skim_codeattributes83 = (_ref81 = this.weatherLang === 'ge') != null ? _ref81 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes83) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes83);
+            _buf += "\"";
+        }
+        _buf += " value=\"ge\">Georgia</option><option";
+        _skim_codeattributes84 = (_ref82 = this.weatherLang === 'de') != null ? _ref82 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes84) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes84);
+            _buf += "\"";
+        }
+        _buf += " value=\"de\">Germany</option><option";
+        _skim_codeattributes85 = (_ref83 = this.weatherLang === 'gh') != null ? _ref83 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes85) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes85);
+            _buf += "\"";
+        }
+        _buf += " value=\"gh\">Ghana</option><option";
+        _skim_codeattributes86 = (_ref84 = this.weatherLang === 'gi') != null ? _ref84 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes86) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes86);
+            _buf += "\"";
+        }
+        _buf += " value=\"gi\">Gibraltar</option><option";
+        _skim_codeattributes87 = (_ref85 = this.weatherLang === 'gr') != null ? _ref85 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes87) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes87);
+            _buf += "\"";
+        }
+        _buf += " value=\"gr\">Greece</option><option";
+        _skim_codeattributes88 = (_ref86 = this.weatherLang === 'gl') != null ? _ref86 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes88) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes88);
+            _buf += "\"";
+        }
+        _buf += " value=\"gl\">Greenland</option><option";
+        _skim_codeattributes89 = (_ref87 = this.weatherLang === 'gd') != null ? _ref87 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes89) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes89);
+            _buf += "\"";
+        }
+        _buf += " value=\"gd\">Grenada</option><option";
+        _skim_codeattributes90 = (_ref88 = this.weatherLang === 'gp') != null ? _ref88 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes90) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes90);
+            _buf += "\"";
+        }
+        _buf += " value=\"gp\">Guadeloupe</option><option";
+        _skim_codeattributes91 = (_ref89 = this.weatherLang === 'gu') != null ? _ref89 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes91) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes91);
+            _buf += "\"";
+        }
+        _buf += " value=\"gu\">Guam</option><option";
+        _skim_codeattributes92 = (_ref90 = this.weatherLang === 'gt') != null ? _ref90 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes92) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes92);
+            _buf += "\"";
+        }
+        _buf += " value=\"gt\">Guatemala</option><option";
+        _skim_codeattributes93 = (_ref91 = this.weatherLang === 'gg') != null ? _ref91 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes93) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes93);
+            _buf += "\"";
+        }
+        _buf += " value=\"gg\">Guernsey</option><option";
+        _skim_codeattributes94 = (_ref92 = this.weatherLang === 'gn') != null ? _ref92 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes94) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes94);
+            _buf += "\"";
+        }
+        _buf += " value=\"gn\">Guinea</option><option";
+        _skim_codeattributes95 = (_ref93 = this.weatherLang === 'gw') != null ? _ref93 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes95) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes95);
+            _buf += "\"";
+        }
+        _buf += " value=\"gw\">Guinea-Bissau</option><option";
+        _skim_codeattributes96 = (_ref94 = this.weatherLang === 'gy') != null ? _ref94 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes96) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes96);
+            _buf += "\"";
+        }
+        _buf += " value=\"gy\">Guyana</option><option";
+        _skim_codeattributes97 = (_ref95 = this.weatherLang === 'ht') != null ? _ref95 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes97) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes97);
+            _buf += "\"";
+        }
+        _buf += " value=\"ht\">Haiti</option><option";
+        _skim_codeattributes98 = (_ref96 = this.weatherLang === 'hm') != null ? _ref96 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes98) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes98);
+            _buf += "\"";
+        }
+        _buf += " value=\"hm\">Heard Island and McDonald Islands</option><option";
+        _skim_codeattributes99 = (_ref97 = this.weatherLang === 'va') != null ? _ref97 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes99) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes99);
+            _buf += "\"";
+        }
+        _buf += " value=\"va\">Holy See (Vatican City State)</option><option";
+        _skim_codeattributes100 = (_ref98 = this.weatherLang === 'hn') != null ? _ref98 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes100) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes100);
+            _buf += "\"";
+        }
+        _buf += " value=\"hn\">Honduras</option><option";
+        _skim_codeattributes101 = (_ref99 = this.weatherLang === 'hk') != null ? _ref99 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes101) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes101);
+            _buf += "\"";
+        }
+        _buf += " value=\"hk\">Hong Kong</option><option";
+        _skim_codeattributes102 = (_ref100 = this.weatherLang === 'hu') != null ? _ref100 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes102) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes102);
+            _buf += "\"";
+        }
+        _buf += " value=\"hu\">Hungary</option><option";
+        _skim_codeattributes103 = (_ref101 = this.weatherLang === 'is') != null ? _ref101 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes103) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes103);
+            _buf += "\"";
+        }
+        _buf += " value=\"is\">Iceland</option><option";
+        _skim_codeattributes104 = (_ref102 = this.weatherLang === 'in') != null ? _ref102 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes104) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes104);
+            _buf += "\"";
+        }
+        _buf += " value=\"in\">India</option><option";
+        _skim_codeattributes105 = (_ref103 = this.weatherLang === 'id') != null ? _ref103 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes105) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes105);
+            _buf += "\"";
+        }
+        _buf += " value=\"id\">Indonesia</option><option";
+        _skim_codeattributes106 = (_ref104 = this.weatherLang === 'ir') != null ? _ref104 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes106) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes106);
+            _buf += "\"";
+        }
+        _buf += " value=\"ir\">Iran, Islamic Republic of</option><option";
+        _skim_codeattributes107 = (_ref105 = this.weatherLang === 'iq') != null ? _ref105 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes107) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes107);
+            _buf += "\"";
+        }
+        _buf += " value=\"iq\">Iraq</option><option";
+        _skim_codeattributes108 = (_ref106 = this.weatherLang === 'ie') != null ? _ref106 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes108) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes108);
+            _buf += "\"";
+        }
+        _buf += " value=\"ie\">Ireland</option><option";
+        _skim_codeattributes109 = (_ref107 = this.weatherLang === 'im') != null ? _ref107 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes109) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes109);
+            _buf += "\"";
+        }
+        _buf += " value=\"im\">Isle of Man</option><option";
+        _skim_codeattributes110 = (_ref108 = this.weatherLang === 'il') != null ? _ref108 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes110) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes110);
+            _buf += "\"";
+        }
+        _buf += " value=\"il\">Israel</option><option";
+        _skim_codeattributes111 = (_ref109 = this.weatherLang === 'it') != null ? _ref109 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes111) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes111);
+            _buf += "\"";
+        }
+        _buf += " value=\"it\">Italy</option><option";
+        _skim_codeattributes112 = (_ref110 = this.weatherLang === 'jm') != null ? _ref110 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes112) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes112);
+            _buf += "\"";
+        }
+        _buf += " value=\"jm\">Jamaica</option><option";
+        _skim_codeattributes113 = (_ref111 = this.weatherLang === 'jp') != null ? _ref111 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes113) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes113);
+            _buf += "\"";
+        }
+        _buf += " value=\"jp\">Japan</option><option";
+        _skim_codeattributes114 = (_ref112 = this.weatherLang === 'je') != null ? _ref112 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes114) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes114);
+            _buf += "\"";
+        }
+        _buf += " value=\"je\">Jersey</option><option";
+        _skim_codeattributes115 = (_ref113 = this.weatherLang === 'jo') != null ? _ref113 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes115) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes115);
+            _buf += "\"";
+        }
+        _buf += " value=\"jo\">Jordan</option><option";
+        _skim_codeattributes116 = (_ref114 = this.weatherLang === 'kz') != null ? _ref114 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes116) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes116);
+            _buf += "\"";
+        }
+        _buf += " value=\"kz\">Kazakhstan</option><option";
+        _skim_codeattributes117 = (_ref115 = this.weatherLang === 'ke') != null ? _ref115 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes117) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes117);
+            _buf += "\"";
+        }
+        _buf += " value=\"ke\">Kenya</option><option";
+        _skim_codeattributes118 = (_ref116 = this.weatherLang === 'ki') != null ? _ref116 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes118) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes118);
+            _buf += "\"";
+        }
+        _buf += " value=\"ki\">Kiribati</option><option";
+        _skim_codeattributes119 = (_ref117 = this.weatherLang === 'kp') != null ? _ref117 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes119) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes119);
+            _buf += "\"";
+        }
+        _buf += " value=\"kp\">Korea, Democratic People&rsquo;s Republic of</option><option";
+        _skim_codeattributes120 = (_ref118 = this.weatherLang === 'kr') != null ? _ref118 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes120) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes120);
+            _buf += "\"";
+        }
+        _buf += " value=\"kr\">Korea, Republic of</option><option";
+        _skim_codeattributes121 = (_ref119 = this.weatherLang === 'kw') != null ? _ref119 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes121) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes121);
+            _buf += "\"";
+        }
+        _buf += " value=\"kw\">Kuwait</option><option";
+        _skim_codeattributes122 = (_ref120 = this.weatherLang === 'kg') != null ? _ref120 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes122) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes122);
+            _buf += "\"";
+        }
+        _buf += " value=\"kg\">Kyrgyzstan</option><option";
+        _skim_codeattributes123 = (_ref121 = this.weatherLang === 'la') != null ? _ref121 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes123) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes123);
+            _buf += "\"";
+        }
+        _buf += " value=\"la\">Lao People&rsquo;s Democratic Republic</option><option";
+        _skim_codeattributes124 = (_ref122 = this.weatherLang === 'lv') != null ? _ref122 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes124) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes124);
+            _buf += "\"";
+        }
+        _buf += " value=\"lv\">Latvia</option><option";
+        _skim_codeattributes125 = (_ref123 = this.weatherLang === 'lb') != null ? _ref123 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes125) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes125);
+            _buf += "\"";
+        }
+        _buf += " value=\"lb\">Lebanon</option><option";
+        _skim_codeattributes126 = (_ref124 = this.weatherLang === 'ls') != null ? _ref124 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes126) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes126);
+            _buf += "\"";
+        }
+        _buf += " value=\"ls\">Lesotho</option><option";
+        _skim_codeattributes127 = (_ref125 = this.weatherLang === 'lr') != null ? _ref125 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes127) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes127);
+            _buf += "\"";
+        }
+        _buf += " value=\"lr\">Liberia</option><option";
+        _skim_codeattributes128 = (_ref126 = this.weatherLang === 'ly') != null ? _ref126 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes128) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes128);
+            _buf += "\"";
+        }
+        _buf += " value=\"ly\">Libyan Arab Jamahiriya</option><option";
+        _skim_codeattributes129 = (_ref127 = this.weatherLang === 'li') != null ? _ref127 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes129) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes129);
+            _buf += "\"";
+        }
+        _buf += " value=\"li\">Liechtenstein</option><option";
+        _skim_codeattributes130 = (_ref128 = this.weatherLang === 'lt') != null ? _ref128 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes130) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes130);
+            _buf += "\"";
+        }
+        _buf += " value=\"lt\">Lithuania</option><option";
+        _skim_codeattributes131 = (_ref129 = this.weatherLang === 'lu') != null ? _ref129 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes131) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes131);
+            _buf += "\"";
+        }
+        _buf += " value=\"lu\">Luxembourg</option><option";
+        _skim_codeattributes132 = (_ref130 = this.weatherLang === 'mo') != null ? _ref130 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes132) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes132);
+            _buf += "\"";
+        }
+        _buf += " value=\"mo\">Macao</option><option";
+        _skim_codeattributes133 = (_ref131 = this.weatherLang === 'mk') != null ? _ref131 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes133) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes133);
+            _buf += "\"";
+        }
+        _buf += " value=\"mk\">Macedonia, the former Yugoslav Republic of</option><option";
+        _skim_codeattributes134 = (_ref132 = this.weatherLang === 'mg') != null ? _ref132 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes134) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes134);
+            _buf += "\"";
+        }
+        _buf += " value=\"mg\">Madagascar</option><option";
+        _skim_codeattributes135 = (_ref133 = this.weatherLang === 'mw') != null ? _ref133 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes135) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes135);
+            _buf += "\"";
+        }
+        _buf += " value=\"mw\">Malawi</option><option";
+        _skim_codeattributes136 = (_ref134 = this.weatherLang === 'my') != null ? _ref134 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes136) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes136);
+            _buf += "\"";
+        }
+        _buf += " value=\"my\">Malaysia</option><option";
+        _skim_codeattributes137 = (_ref135 = this.weatherLang === 'mv') != null ? _ref135 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes137) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes137);
+            _buf += "\"";
+        }
+        _buf += " value=\"mv\">Maldives</option><option";
+        _skim_codeattributes138 = (_ref136 = this.weatherLang === 'ml') != null ? _ref136 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes138) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes138);
+            _buf += "\"";
+        }
+        _buf += " value=\"ml\">Mali</option><option";
+        _skim_codeattributes139 = (_ref137 = this.weatherLang === 'mt') != null ? _ref137 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes139) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes139);
+            _buf += "\"";
+        }
+        _buf += " value=\"mt\">Malta</option><option";
+        _skim_codeattributes140 = (_ref138 = this.weatherLang === 'mh') != null ? _ref138 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes140) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes140);
+            _buf += "\"";
+        }
+        _buf += " value=\"mh\">Marshall Islands</option><option";
+        _skim_codeattributes141 = (_ref139 = this.weatherLang === 'mq') != null ? _ref139 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes141) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes141);
+            _buf += "\"";
+        }
+        _buf += " value=\"mq\">Martinique</option><option";
+        _skim_codeattributes142 = (_ref140 = this.weatherLang === 'mr') != null ? _ref140 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes142) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes142);
+            _buf += "\"";
+        }
+        _buf += " value=\"mr\">Mauritania</option><option";
+        _skim_codeattributes143 = (_ref141 = this.weatherLang === 'mu') != null ? _ref141 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes143) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes143);
+            _buf += "\"";
+        }
+        _buf += " value=\"mu\">Mauritius</option><option";
+        _skim_codeattributes144 = (_ref142 = this.weatherLang === 'yt') != null ? _ref142 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes144) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes144);
+            _buf += "\"";
+        }
+        _buf += " value=\"yt\">Mayotte</option><option";
+        _skim_codeattributes145 = (_ref143 = this.weatherLang === 'mx') != null ? _ref143 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes145) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes145);
+            _buf += "\"";
+        }
+        _buf += " value=\"mx\">Mexico</option><option";
+        _skim_codeattributes146 = (_ref144 = this.weatherLang === 'fm') != null ? _ref144 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes146) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes146);
+            _buf += "\"";
+        }
+        _buf += " value=\"fm\">Micronesia, Federated States of</option><option";
+        _skim_codeattributes147 = (_ref145 = this.weatherLang === 'md') != null ? _ref145 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes147) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes147);
+            _buf += "\"";
+        }
+        _buf += " value=\"md\">Moldova, Republic of</option><option";
+        _skim_codeattributes148 = (_ref146 = this.weatherLang === 'mc') != null ? _ref146 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes148) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes148);
+            _buf += "\"";
+        }
+        _buf += " value=\"mc\">Monaco</option><option";
+        _skim_codeattributes149 = (_ref147 = this.weatherLang === 'mn') != null ? _ref147 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes149) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes149);
+            _buf += "\"";
+        }
+        _buf += " value=\"mn\">Mongolia</option><option";
+        _skim_codeattributes150 = (_ref148 = this.weatherLang === 'me') != null ? _ref148 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes150) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes150);
+            _buf += "\"";
+        }
+        _buf += " value=\"me\">Montenegro</option><option";
+        _skim_codeattributes151 = (_ref149 = this.weatherLang === 'ms') != null ? _ref149 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes151) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes151);
+            _buf += "\"";
+        }
+        _buf += " value=\"ms\">Montserrat</option><option";
+        _skim_codeattributes152 = (_ref150 = this.weatherLang === 'ma') != null ? _ref150 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes152) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes152);
+            _buf += "\"";
+        }
+        _buf += " value=\"ma\">Morocco</option><option";
+        _skim_codeattributes153 = (_ref151 = this.weatherLang === 'mz') != null ? _ref151 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes153) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes153);
+            _buf += "\"";
+        }
+        _buf += " value=\"mz\">Mozambique</option><option";
+        _skim_codeattributes154 = (_ref152 = this.weatherLang === 'mm') != null ? _ref152 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes154) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes154);
+            _buf += "\"";
+        }
+        _buf += " value=\"mm\">Myanmar</option><option";
+        _skim_codeattributes155 = (_ref153 = this.weatherLang === 'na') != null ? _ref153 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes155) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes155);
+            _buf += "\"";
+        }
+        _buf += " value=\"na\">Namibia</option><option";
+        _skim_codeattributes156 = (_ref154 = this.weatherLang === 'nr') != null ? _ref154 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes156) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes156);
+            _buf += "\"";
+        }
+        _buf += " value=\"nr\">Nauru</option><option";
+        _skim_codeattributes157 = (_ref155 = this.weatherLang === 'np') != null ? _ref155 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes157) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes157);
+            _buf += "\"";
+        }
+        _buf += " value=\"np\">Nepal</option><option";
+        _skim_codeattributes158 = (_ref156 = this.weatherLang === 'nl') != null ? _ref156 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes158) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes158);
+            _buf += "\"";
+        }
+        _buf += " value=\"nl\">Netherlands</option><option";
+        _skim_codeattributes159 = (_ref157 = this.weatherLang === 'an') != null ? _ref157 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes159) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes159);
+            _buf += "\"";
+        }
+        _buf += " value=\"an\">Netherlands Antilles</option><option";
+        _skim_codeattributes160 = (_ref158 = this.weatherLang === 'nc') != null ? _ref158 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes160) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes160);
+            _buf += "\"";
+        }
+        _buf += " value=\"nc\">New Caledonia</option><option";
+        _skim_codeattributes161 = (_ref159 = this.weatherLang === 'nz') != null ? _ref159 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes161) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes161);
+            _buf += "\"";
+        }
+        _buf += " value=\"nz\">New Zealand</option><option";
+        _skim_codeattributes162 = (_ref160 = this.weatherLang === 'ni') != null ? _ref160 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes162) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes162);
+            _buf += "\"";
+        }
+        _buf += " value=\"ni\">Nicaragua</option><option";
+        _skim_codeattributes163 = (_ref161 = this.weatherLang === 'ne') != null ? _ref161 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes163) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes163);
+            _buf += "\"";
+        }
+        _buf += " value=\"ne\">Niger</option><option";
+        _skim_codeattributes164 = (_ref162 = this.weatherLang === 'ng') != null ? _ref162 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes164) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes164);
+            _buf += "\"";
+        }
+        _buf += " value=\"ng\">Nigeria</option><option";
+        _skim_codeattributes165 = (_ref163 = this.weatherLang === 'nu') != null ? _ref163 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes165) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes165);
+            _buf += "\"";
+        }
+        _buf += " value=\"nu\">Niue</option><option";
+        _skim_codeattributes166 = (_ref164 = this.weatherLang === 'nf') != null ? _ref164 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes166) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes166);
+            _buf += "\"";
+        }
+        _buf += " value=\"nf\">Norfolk Island</option><option";
+        _skim_codeattributes167 = (_ref165 = this.weatherLang === 'mp') != null ? _ref165 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes167) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes167);
+            _buf += "\"";
+        }
+        _buf += " value=\"mp\">Northern Mariana Islands</option><option";
+        _skim_codeattributes168 = (_ref166 = this.weatherLang === 'no') != null ? _ref166 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes168) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes168);
+            _buf += "\"";
+        }
+        _buf += " value=\"no\">Norway</option><option";
+        _skim_codeattributes169 = (_ref167 = this.weatherLang === 'om') != null ? _ref167 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes169) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes169);
+            _buf += "\"";
+        }
+        _buf += " value=\"om\">Oman</option><option";
+        _skim_codeattributes170 = (_ref168 = this.weatherLang === 'pk') != null ? _ref168 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes170) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes170);
+            _buf += "\"";
+        }
+        _buf += " value=\"pk\">Pakistan</option><option";
+        _skim_codeattributes171 = (_ref169 = this.weatherLang === 'pw') != null ? _ref169 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes171) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes171);
+            _buf += "\"";
+        }
+        _buf += " value=\"pw\">Palau</option><option";
+        _skim_codeattributes172 = (_ref170 = this.weatherLang === 'ps') != null ? _ref170 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes172) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes172);
+            _buf += "\"";
+        }
+        _buf += " value=\"ps\">Palestinian Territory, Occupied</option><option";
+        _skim_codeattributes173 = (_ref171 = this.weatherLang === 'pa') != null ? _ref171 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes173) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes173);
+            _buf += "\"";
+        }
+        _buf += " value=\"pa\">Panama</option><option";
+        _skim_codeattributes174 = (_ref172 = this.weatherLang === 'pg') != null ? _ref172 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes174) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes174);
+            _buf += "\"";
+        }
+        _buf += " value=\"pg\">Papua New Guinea</option><option";
+        _skim_codeattributes175 = (_ref173 = this.weatherLang === 'py') != null ? _ref173 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes175) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes175);
+            _buf += "\"";
+        }
+        _buf += " value=\"py\">Paraguay</option><option";
+        _skim_codeattributes176 = (_ref174 = this.weatherLang === 'pe') != null ? _ref174 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes176) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes176);
+            _buf += "\"";
+        }
+        _buf += " value=\"pe\">Peru</option><option";
+        _skim_codeattributes177 = (_ref175 = this.weatherLang === 'ph') != null ? _ref175 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes177) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes177);
+            _buf += "\"";
+        }
+        _buf += " value=\"ph\">Philippines</option><option";
+        _skim_codeattributes178 = (_ref176 = this.weatherLang === 'pn') != null ? _ref176 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes178) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes178);
+            _buf += "\"";
+        }
+        _buf += " value=\"pn\">Pitcairn</option><option";
+        _skim_codeattributes179 = (_ref177 = this.weatherLang === 'pl') != null ? _ref177 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes179) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes179);
+            _buf += "\"";
+        }
+        _buf += " value=\"pl\">Poland</option><option";
+        _skim_codeattributes180 = (_ref178 = this.weatherLang === 'pt') != null ? _ref178 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes180) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes180);
+            _buf += "\"";
+        }
+        _buf += " value=\"pt\">Portugal</option><option";
+        _skim_codeattributes181 = (_ref179 = this.weatherLang === 'pr') != null ? _ref179 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes181) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes181);
+            _buf += "\"";
+        }
+        _buf += " value=\"pr\">Puerto Rico</option><option";
+        _skim_codeattributes182 = (_ref180 = this.weatherLang === 'qa') != null ? _ref180 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes182) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes182);
+            _buf += "\"";
+        }
+        _buf += " value=\"qa\">Qatar</option><option";
+        _skim_codeattributes183 = (_ref181 = this.weatherLang === 're') != null ? _ref181 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes183) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes183);
+            _buf += "\"";
+        }
+        _buf += " value=\"re\">R&eacute;union</option><option";
+        _skim_codeattributes184 = (_ref182 = this.weatherLang === 'ro') != null ? _ref182 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes184) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes184);
+            _buf += "\"";
+        }
+        _buf += " value=\"ro\">Romania</option><option";
+        _skim_codeattributes185 = (_ref183 = this.weatherLang === 'ru') != null ? _ref183 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes185) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes185);
+            _buf += "\"";
+        }
+        _buf += " value=\"ru\">Russian Federation</option><option";
+        _skim_codeattributes186 = (_ref184 = this.weatherLang === 'rw') != null ? _ref184 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes186) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes186);
+            _buf += "\"";
+        }
+        _buf += " value=\"rw\">Rwanda</option><option";
+        _skim_codeattributes187 = (_ref185 = this.weatherLang === 'bl') != null ? _ref185 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes187) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes187);
+            _buf += "\"";
+        }
+        _buf += " value=\"bl\">Saint Barth&eacute;lemy</option><option";
+        _skim_codeattributes188 = (_ref186 = this.weatherLang === 'sh') != null ? _ref186 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes188) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes188);
+            _buf += "\"";
+        }
+        _buf += " value=\"sh\">Saint Helena, Ascension and Tristan da Cunha</option><option";
+        _skim_codeattributes189 = (_ref187 = this.weatherLang === 'kn') != null ? _ref187 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes189) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes189);
+            _buf += "\"";
+        }
+        _buf += " value=\"kn\">Saint Kitts and Nevis</option><option";
+        _skim_codeattributes190 = (_ref188 = this.weatherLang === 'lc') != null ? _ref188 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes190) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes190);
+            _buf += "\"";
+        }
+        _buf += " value=\"lc\">Saint Lucia</option><option";
+        _skim_codeattributes191 = (_ref189 = this.weatherLang === 'mf') != null ? _ref189 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes191) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes191);
+            _buf += "\"";
+        }
+        _buf += " value=\"mf\">Saint Martin (French part)</option><option";
+        _skim_codeattributes192 = (_ref190 = this.weatherLang === 'pm') != null ? _ref190 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes192) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes192);
+            _buf += "\"";
+        }
+        _buf += " value=\"pm\">Saint Pierre and Miquelon</option><option";
+        _skim_codeattributes193 = (_ref191 = this.weatherLang === 'vc') != null ? _ref191 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes193) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes193);
+            _buf += "\"";
+        }
+        _buf += " value=\"vc\">Saint Vincent and the Grenadines</option><option";
+        _skim_codeattributes194 = (_ref192 = this.weatherLang === 'ws') != null ? _ref192 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes194) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes194);
+            _buf += "\"";
+        }
+        _buf += " value=\"ws\">Samoa</option><option";
+        _skim_codeattributes195 = (_ref193 = this.weatherLang === 'sm') != null ? _ref193 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes195) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes195);
+            _buf += "\"";
+        }
+        _buf += " value=\"sm\">San Marino</option><option";
+        _skim_codeattributes196 = (_ref194 = this.weatherLang === 'st') != null ? _ref194 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes196) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes196);
+            _buf += "\"";
+        }
+        _buf += " value=\"st\">Sao Tome and Principe</option><option";
+        _skim_codeattributes197 = (_ref195 = this.weatherLang === 'sa') != null ? _ref195 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes197) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes197);
+            _buf += "\"";
+        }
+        _buf += " value=\"sa\">Saudi Arabia</option><option";
+        _skim_codeattributes198 = (_ref196 = this.weatherLang === 'sn') != null ? _ref196 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes198) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes198);
+            _buf += "\"";
+        }
+        _buf += " value=\"sn\">Senegal</option><option";
+        _skim_codeattributes199 = (_ref197 = this.weatherLang === 'rs') != null ? _ref197 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes199) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes199);
+            _buf += "\"";
+        }
+        _buf += " value=\"rs\">Serbia</option><option";
+        _skim_codeattributes200 = (_ref198 = this.weatherLang === 'sc') != null ? _ref198 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes200) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes200);
+            _buf += "\"";
+        }
+        _buf += " value=\"sc\">Seychelles</option><option";
+        _skim_codeattributes201 = (_ref199 = this.weatherLang === 'sl') != null ? _ref199 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes201) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes201);
+            _buf += "\"";
+        }
+        _buf += " value=\"sl\">Sierra Leone</option><option";
+        _skim_codeattributes202 = (_ref200 = this.weatherLang === 'sg') != null ? _ref200 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes202) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes202);
+            _buf += "\"";
+        }
+        _buf += " value=\"sg\">Singapore</option><option";
+        _skim_codeattributes203 = (_ref201 = this.weatherLang === 'sk') != null ? _ref201 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes203) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes203);
+            _buf += "\"";
+        }
+        _buf += " value=\"sk\">Slovakia</option><option";
+        _skim_codeattributes204 = (_ref202 = this.weatherLang === 'si') != null ? _ref202 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes204) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes204);
+            _buf += "\"";
+        }
+        _buf += " value=\"si\">Slovenia</option><option";
+        _skim_codeattributes205 = (_ref203 = this.weatherLang === 'sb') != null ? _ref203 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes205) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes205);
+            _buf += "\"";
+        }
+        _buf += " value=\"sb\">Solomon Islands</option><option";
+        _skim_codeattributes206 = (_ref204 = this.weatherLang === 'so') != null ? _ref204 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes206) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes206);
+            _buf += "\"";
+        }
+        _buf += " value=\"so\">Somalia</option><option";
+        _skim_codeattributes207 = (_ref205 = this.weatherLang === 'za') != null ? _ref205 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes207) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes207);
+            _buf += "\"";
+        }
+        _buf += " value=\"za\">South Africa</option><option";
+        _skim_codeattributes208 = (_ref206 = this.weatherLang === 'gs') != null ? _ref206 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes208) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes208);
+            _buf += "\"";
+        }
+        _buf += " value=\"gs\">South Georgia and the South Sandwich Islands</option><option";
+        _skim_codeattributes209 = (_ref207 = this.weatherLang === 'es') != null ? _ref207 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes209) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes209);
+            _buf += "\"";
+        }
+        _buf += " value=\"es\">Spain</option><option";
+        _skim_codeattributes210 = (_ref208 = this.weatherLang === 'lk') != null ? _ref208 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes210) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes210);
+            _buf += "\"";
+        }
+        _buf += " value=\"lk\">Sri Lanka</option><option";
+        _skim_codeattributes211 = (_ref209 = this.weatherLang === 'sd') != null ? _ref209 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes211) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes211);
+            _buf += "\"";
+        }
+        _buf += " value=\"sd\">Sudan</option><option";
+        _skim_codeattributes212 = (_ref210 = this.weatherLang === 'sr') != null ? _ref210 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes212) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes212);
+            _buf += "\"";
+        }
+        _buf += " value=\"sr\">Suriname</option><option";
+        _skim_codeattributes213 = (_ref211 = this.weatherLang === 'sj') != null ? _ref211 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes213) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes213);
+            _buf += "\"";
+        }
+        _buf += " value=\"sj\">Svalbard and Jan Mayen</option><option";
+        _skim_codeattributes214 = (_ref212 = this.weatherLang === 'sz') != null ? _ref212 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes214) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes214);
+            _buf += "\"";
+        }
+        _buf += " value=\"sz\">Swaziland</option><option";
+        _skim_codeattributes215 = (_ref213 = this.weatherLang === 'se') != null ? _ref213 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes215) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes215);
+            _buf += "\"";
+        }
+        _buf += " value=\"se\">Sweden</option><option";
+        _skim_codeattributes216 = (_ref214 = this.weatherLang === 'ch') != null ? _ref214 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes216) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes216);
+            _buf += "\"";
+        }
+        _buf += " value=\"ch\">Switzerland</option><option";
+        _skim_codeattributes217 = (_ref215 = this.weatherLang === 'sy') != null ? _ref215 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes217) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes217);
+            _buf += "\"";
+        }
+        _buf += " value=\"sy\">Syrian Arab Republic</option><option";
+        _skim_codeattributes218 = (_ref216 = this.weatherLang === 'tw') != null ? _ref216 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes218) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes218);
+            _buf += "\"";
+        }
+        _buf += " value=\"tw\">Taiwan, Province of China</option><option";
+        _skim_codeattributes219 = (_ref217 = this.weatherLang === 'tj') != null ? _ref217 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes219) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes219);
+            _buf += "\"";
+        }
+        _buf += " value=\"tj\">Tajikistan</option><option";
+        _skim_codeattributes220 = (_ref218 = this.weatherLang === 'tz') != null ? _ref218 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes220) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes220);
+            _buf += "\"";
+        }
+        _buf += " value=\"tz\">Tanzania, United Republic of</option><option";
+        _skim_codeattributes221 = (_ref219 = this.weatherLang === 'th') != null ? _ref219 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes221) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes221);
+            _buf += "\"";
+        }
+        _buf += " value=\"th\">Thailand</option><option";
+        _skim_codeattributes222 = (_ref220 = this.weatherLang === 'tl') != null ? _ref220 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes222) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes222);
+            _buf += "\"";
+        }
+        _buf += " value=\"tl\">Timor-Leste</option><option";
+        _skim_codeattributes223 = (_ref221 = this.weatherLang === 'tg') != null ? _ref221 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes223) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes223);
+            _buf += "\"";
+        }
+        _buf += " value=\"tg\">Togo</option><option";
+        _skim_codeattributes224 = (_ref222 = this.weatherLang === 'tk') != null ? _ref222 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes224) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes224);
+            _buf += "\"";
+        }
+        _buf += " value=\"tk\">Tokelau</option><option";
+        _skim_codeattributes225 = (_ref223 = this.weatherLang === 'to') != null ? _ref223 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes225) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes225);
+            _buf += "\"";
+        }
+        _buf += " value=\"to\">Tonga</option><option";
+        _skim_codeattributes226 = (_ref224 = this.weatherLang === 'tt') != null ? _ref224 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes226) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes226);
+            _buf += "\"";
+        }
+        _buf += " value=\"tt\">Trinidad and Tobago</option><option";
+        _skim_codeattributes227 = (_ref225 = this.weatherLang === 'tn') != null ? _ref225 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes227) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes227);
+            _buf += "\"";
+        }
+        _buf += " value=\"tn\">Tunisia</option><option";
+        _skim_codeattributes228 = (_ref226 = this.weatherLang === 'tr') != null ? _ref226 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes228) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes228);
+            _buf += "\"";
+        }
+        _buf += " value=\"tr\">Turkey</option><option";
+        _skim_codeattributes229 = (_ref227 = this.weatherLang === 'tm') != null ? _ref227 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes229) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes229);
+            _buf += "\"";
+        }
+        _buf += " value=\"tm\">Turkmenistan</option><option";
+        _skim_codeattributes230 = (_ref228 = this.weatherLang === 'tc') != null ? _ref228 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes230) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes230);
+            _buf += "\"";
+        }
+        _buf += " value=\"tc\">Turks and Caicos Islands</option><option";
+        _skim_codeattributes231 = (_ref229 = this.weatherLang === 'tv') != null ? _ref229 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes231) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes231);
+            _buf += "\"";
+        }
+        _buf += " value=\"tv\">Tuvalu</option><option";
+        _skim_codeattributes232 = (_ref230 = this.weatherLang === 'ug') != null ? _ref230 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes232) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes232);
+            _buf += "\"";
+        }
+        _buf += " value=\"ug\">Uganda</option><option";
+        _skim_codeattributes233 = (_ref231 = this.weatherLang === 'ua') != null ? _ref231 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes233) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes233);
+            _buf += "\"";
+        }
+        _buf += " value=\"ua\">Ukraine</option><option";
+        _skim_codeattributes234 = (_ref232 = this.weatherLang === 'ae') != null ? _ref232 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes234) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes234);
+            _buf += "\"";
+        }
+        _buf += " value=\"ae\">United Arab Emirates</option><option";
+        _skim_codeattributes235 = (_ref233 = this.weatherLang === 'gb') != null ? _ref233 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes235) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes235);
+            _buf += "\"";
+        }
+        _buf += " value=\"gb\">United Kingdom</option><option";
+        _skim_codeattributes236 = (_ref234 = this.weatherLang === 'us') != null ? _ref234 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes236) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes236);
+            _buf += "\"";
+        }
+        _buf += " value=\"us\">United States</option><option";
+        _skim_codeattributes237 = (_ref235 = this.weatherLang === 'um') != null ? _ref235 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes237) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes237);
+            _buf += "\"";
+        }
+        _buf += " value=\"um\">United States Minor Outlying Islands</option><option";
+        _skim_codeattributes238 = (_ref236 = this.weatherLang === 'uy') != null ? _ref236 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes238) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes238);
+            _buf += "\"";
+        }
+        _buf += " value=\"uy\">Uruguay</option><option";
+        _skim_codeattributes239 = (_ref237 = this.weatherLang === 'uz') != null ? _ref237 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes239) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes239);
+            _buf += "\"";
+        }
+        _buf += " value=\"uz\">Uzbekistan</option><option";
+        _skim_codeattributes240 = (_ref238 = this.weatherLang === 'vu') != null ? _ref238 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes240) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes240);
+            _buf += "\"";
+        }
+        _buf += " value=\"vu\">Vanuatu</option><option";
+        _skim_codeattributes241 = (_ref239 = this.weatherLang === 've') != null ? _ref239 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes241) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes241);
+            _buf += "\"";
+        }
+        _buf += " value=\"ve\">Venezuela, Bolivarian Republic of</option><option";
+        _skim_codeattributes242 = (_ref240 = this.weatherLang === 'vn') != null ? _ref240 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes242) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes242);
+            _buf += "\"";
+        }
+        _buf += " value=\"vn\">Viet Nam</option><option";
+        _skim_codeattributes243 = (_ref241 = this.weatherLang === 'vg') != null ? _ref241 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes243) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes243);
+            _buf += "\"";
+        }
+        _buf += " value=\"vg\">Virgin Islands, British</option><option";
+        _skim_codeattributes244 = (_ref242 = this.weatherLang === 'vi') != null ? _ref242 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes244) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes244);
+            _buf += "\"";
+        }
+        _buf += " value=\"vi\">Virgin Islands, U.S.</option><option";
+        _skim_codeattributes245 = (_ref243 = this.weatherLang === 'wf') != null ? _ref243 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes245) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes245);
+            _buf += "\"";
+        }
+        _buf += " value=\"wf\">Wallis and Futuna</option><option";
+        _skim_codeattributes246 = (_ref244 = this.weatherLang === 'eh') != null ? _ref244 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes246) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes246);
+            _buf += "\"";
+        }
+        _buf += " value=\"eh\">Western Sahara</option><option";
+        _skim_codeattributes247 = (_ref245 = this.weatherLang === 'ye') != null ? _ref245 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes247) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes247);
+            _buf += "\"";
+        }
+        _buf += " value=\"ye\">Yemen</option><option";
+        _skim_codeattributes248 = (_ref246 = this.weatherLang === 'zm') != null ? _ref246 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes248) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes248);
+            _buf += "\"";
+        }
+        _buf += " value=\"zm\">Zambia</option><option";
+        _skim_codeattributes249 = (_ref247 = this.weatherLang === 'zw') != null ? _ref247 : {
+          'selected': false
+        };
+        switch (_skim_codeattributes249) {
+          case true:
+            _buf += " selected=\"selected\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " selected=\"";
+            _buf += this.escape(_skim_codeattributes249);
+            _buf += "\"";
+        }
+        _buf += " value=\"zw\">Zimbabwe</option></select></div></form></div>";
         return _buf;
       });
     };
