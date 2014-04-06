@@ -7,7 +7,10 @@
   form.pos-absolute-center
     .form-group
       label.h2 for='m-settings--background' Votre plus belle photo de voyage
-      input type='file' id='m-settings--background' class='form-control input-lg m-settings--background'
+      .input-group
+        input type='file' id='m-settings--background' class='form-control input-lg m-settings--background'
+        span.input-group-btn
+          button.btn.btn-danger.btn-lg.m-settings--background--cancel type='button' &times;
 
     .form-group
       label.h2 for='m-settings--lang' Langue

@@ -9,8 +9,12 @@ class App.Views.Settings extends Backbone.View
   events:
     'change #m-settings--background': 'setBackground'
     'change #m-settings--lang': 'setLang'
-    'click .m-settings--icon': 'openSettings'
     'click .m-overlay--settings': 'closeSettings'
+    'click .m-settings--background--cancel': 'cancelBackground'
+    'click .m-settings--icon': 'openSettings'
+
+  cancelBackground: =>
+    @model.setBackground @model.defaults.background
 
   closeSettings: (e) =>
     if e and $(e.target).hasClass('m-overlay--settings')

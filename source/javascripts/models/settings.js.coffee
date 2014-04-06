@@ -1,6 +1,6 @@
 class App.Models.Settings extends Backbone.Model
   defaults:
-    background: null
+    background: '/images/wallpaper.jpg'
     lang: 'fr'
 
   localStorage: new Backbone.LocalStorage('dashboard')
