@@ -1,11 +1,21 @@
+@mixin background-opacity($color, $opacity: 0.7)
+  background-color: $color
+  background-color: rgba($color, $opacity)
+
 .green
   background-color: #1abc9c
+
+  &.transparent
+    @include background-opacity(#1abc9c)
 
 .dark-green
   background-color: #16a085
 
 .blue
   background-color: #3498db
+
+  &.transparent
+    @include background-opacity(#3498db)
 
 .dark-blue
   background-color: #2980b9
@@ -16,14 +26,26 @@
 .black
   background-color: #2c3e50
 
+  &.transparent
+    @include background-opacity(#2c3e50)
+
 .yellow
   background-color: #f1c40f
+
+  &.transparent
+    @include background-opacity(#f1c40f)
 
 .orange
   background-color: #f39c12
 
+  &.transparent
+    @include background-opacity(#f39c12)
+
 .red
   background-color: #e74c3c
+
+  &.transparent
+    @include background-opacity(#e74c3c)
 
 .dark-red
   background-color: #c0392b
@@ -34,5 +56,11 @@
 .white
   background-color: #FFFFFF
 
+  &.transparent
+    @include background-opacity(#FFFFFF)
+
 .gray
   background-color: #bdc3c7
+
+  &.transparent
+    @include background-opacity(#bdc3c7)

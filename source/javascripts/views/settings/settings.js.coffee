@@ -7,7 +7,19 @@ class App.Views.Settings extends Backbone.View
     @model.on('change', @render, this)
 
   events:
-    'change .m-settings--background': 'setBackground'
+    'change #m-settings--background': 'setBackground'
+    'change #m-settings--lang': 'setLang'
+    'click .m-settings--icon': 'openSettings'
+    'click .m-overlay--settings': 'closeSettings'
+
+  closeSettings: (e) =>
+    if e and $(e.target).hasClass('m-overlay--settings')
+      @$('.m-overlay--settings').hide()
+    else unless e
+      @$('.m-overlay--settings').hide()
+
+  openSettings: =>
+    @$('.m-overlay--settings').show()
 
   setBackground: (e) =>
     fReader = new FileReader()
@@ -16,7 +28,13 @@ class App.Views.Settings extends Backbone.View
     fReader.readAsDataURL file
     fReader.onload = (e) =>
       @model.setBackground e.target.result
+      @closeSettings()
+
+  setLang: (e) =>
+    @model.setLang @$('#m-settings--lang').val()
+    goTo('/')
 
   render: ->
     $(@el).html(@template(@model.toJSON()))
+    @closeSettings()
     @

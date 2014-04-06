@@ -8,5 +8,5 @@ class App.Collections.Weathers extends Backbone.Collection
 
   parse: (response) ->
     items = response.list
-    _.each items, (item) ->
+    _(items).each (item) ->
       item.name = response.city.name

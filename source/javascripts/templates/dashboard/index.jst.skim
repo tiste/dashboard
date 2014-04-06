@@ -1,4 +1,4 @@
-.m-overlay
+.m-overlay--dashboard.transparent class=(shuffleColor())
   .container.mtl
     form.m-search
       .form-group

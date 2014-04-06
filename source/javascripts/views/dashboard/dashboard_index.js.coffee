@@ -13,7 +13,7 @@ class App.Views.DashboardIndex extends Backbone.View
 
   displaySearch: (e) =>
     if isChar(e) && e.target.tagName.toLowerCase() isnt 'input'
-      @$('.m-overlay').show()
+      @$('.m-overlay--dashboard').show()
       @$('.m-search--input').focus()
 
   doSearch: (e) ->
@@ -22,9 +22,9 @@ class App.Views.DashboardIndex extends Backbone.View
 
   isSearching: (e) =>
     if (!isChar(e) and @$('.m-search--input').val() is '') or (e.keyCode is 27)
-      @$('.m-overlay').hide()
+      @$('.m-overlay--dashboard').hide()
     else
-      @$('.m-overlay').show()
+      @$('.m-overlay--dashboard').show()
 
       selected = @$('.m-search--results--item.selected')
 
@@ -38,16 +38,14 @@ class App.Views.DashboardIndex extends Backbone.View
         @$('.m-search--results').stop().animate scrollTop: newSelectedPosition, 100
 
   loadWidgets: =>
-    weathers = new App.Collections.Weathers()
-    settings = new App.Models.Settings id: 1
-    settings.fetch()
+    settingsView  = new App.Views.Settings model: window.App.Settings
+    weathers      = new App.Collections.Weathers()
 
-    settingsView  = new App.Views.Settings model: settings
     @$('.m-widget--settings').html(settingsView.render().el)
 
     weathers.fetch
       data:
-        lang: 'fr'
+        lang: window.App.Settings.get('lang')
         q: getCity()
         units: 'metric'
       dataType: 'jsonp'
@@ -61,7 +59,7 @@ class App.Views.DashboardIndex extends Backbone.View
 
       googles.fetch
         data:
-          hl: 'fr'
+          hl: window.App.Settings.get('lang')
           q: @$('.m-search--input').val()
           rsz: 8
         dataType: 'jsonp'
@@ -73,6 +71,6 @@ class App.Views.DashboardIndex extends Backbone.View
 
   render: =>
     $(@el).html(@template)
-    @$('.m-overlay').hide()
+    @$('.m-overlay--dashboard').hide()
     @loadWidgets()
     @

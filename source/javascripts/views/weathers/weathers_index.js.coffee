@@ -18,9 +18,9 @@ class App.Views.WeathersIndex extends Backbone.View
 
     weathers.fetch
       data:
+        lang: window.App.Settings.get('lang')
         q: city
         units: 'metric'
-        lang: 'fr'
       dataType: 'jsonp'
       success: =>
         @collection = weathers
