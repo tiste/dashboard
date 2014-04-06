@@ -15,9 +15,12 @@ class App.Views.DashboardIndex extends Backbone.View
         q: getCity()
         units: 'metric'
       dataType: 'jsonp'
-      success: ->
+      success: =>
         view = new App.Views.WeathersIndex collection: weathers
         @$('.m-widget--weather').html(view.render().el)
+      error: =>
+        setCity('Paris')
+        goTo('/')
 
   render: =>
     $(@el).html(@template)

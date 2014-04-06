@@ -11,7 +11,7 @@ class App.Views.WeathersIndex extends Backbone.View
   refetch: (e) =>
     e.preventDefault()
 
-    weathers  = new App.Collections.Weathers()
+    weathers = new App.Collections.Weathers()
 
     setCity @$('.m-weather--input').val()
     city = getCity()
@@ -26,6 +26,9 @@ class App.Views.WeathersIndex extends Backbone.View
         @collection = weathers
         setCity weathers.at(0).get('city')
         @render()
+      error: =>
+        setCity('Paris')
+        goTo('/')
 
   render: =>
     $(@el).html(@template(weathers: @collection.toJSON()))

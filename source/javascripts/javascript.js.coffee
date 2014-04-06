@@ -40,9 +40,9 @@
 @getCity = ->
   if localStorage
     if localStorage['city']
-      return localStorage['city'] + ',' + window.App.Settings.get('lang')
+      return localStorage['city'] + ',' + window.App.Settings.get('weatherLang')
 
-  'Paris,' + window.App.Settings.get('lang')
+  'Paris,' + window.App.Settings.get('weatherLang')
 
 @goTo = (url) ->
   window.open(url, '_self')

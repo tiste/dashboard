@@ -2,6 +2,7 @@ class App.Models.Settings extends Backbone.Model
   defaults:
     background: '/images/wallpaper.jpg'
     lang: 'fr'
+    weatherLang: 'fr'
 
   localStorage: new Backbone.LocalStorage('dashboard')
 
@@ -12,7 +13,10 @@ class App.Models.Settings extends Backbone.Model
 
   setLang: (lang) =>
     @set('lang', lang)
-    setCity('Paris') if lang is 'fr'
-    setCity('London') if lang is 'en'
+    @save()
+    @
+
+  setWeatherLang: (lang) =>
+    @set('weatherLang', lang)
     @save()
     @

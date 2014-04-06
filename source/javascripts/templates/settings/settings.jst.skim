@@ -17,3 +17,253 @@
       select id='m-settings--lang' class='form-control m-settings--lang'
         option value='fr' selected=((@lang == 'fr') ? 'selected' : false) Français
         option value='en' selected=((@lang == 'en') ? 'selected' : false) English
+
+    .form-group
+      label.h2 for='m-settings--lang--weather' Pays de la météo
+      select id='m-settings--lang--weather' class='form-control m-settings--lang--weather'
+        option value='af' selected=((@weatherLang == 'af') ? 'selected' : false) Afghanistan
+        option value='ax' selected=((@weatherLang == 'ax') ? 'selected' : false) &Aring;land Islands
+        option value='al' selected=((@weatherLang == 'al') ? 'selected' : false) Albania
+        option value='dz' selected=((@weatherLang == 'dz') ? 'selected' : false) Algeria
+        option value='as' selected=((@weatherLang == 'as') ? 'selected' : false) American Samoa
+        option value='ad' selected=((@weatherLang == 'ad') ? 'selected' : false) Andorra
+        option value='ao' selected=((@weatherLang == 'ao') ? 'selected' : false) Angola
+        option value='ai' selected=((@weatherLang == 'ai') ? 'selected' : false) Anguilla
+        option value='aq' selected=((@weatherLang == 'aq') ? 'selected' : false) Antarctica
+        option value='ag' selected=((@weatherLang == 'ag') ? 'selected' : false) Antigua and Barbuda
+        option value='ar' selected=((@weatherLang == 'ar') ? 'selected' : false) Argentina
+        option value='am' selected=((@weatherLang == 'am') ? 'selected' : false) Armenia
+        option value='aw' selected=((@weatherLang == 'aw') ? 'selected' : false) Aruba
+        option value='au' selected=((@weatherLang == 'au') ? 'selected' : false) Australia
+        option value='at' selected=((@weatherLang == 'at') ? 'selected' : false) Austria
+        option value='az' selected=((@weatherLang == 'az') ? 'selected' : false) Azerbaijan
+        option value='bs' selected=((@weatherLang == 'bs') ? 'selected' : false) Bahamas
+        option value='bh' selected=((@weatherLang == 'bh') ? 'selected' : false) Bahrain
+        option value='bd' selected=((@weatherLang == 'bd') ? 'selected' : false) Bangladesh
+        option value='bb' selected=((@weatherLang == 'bb') ? 'selected' : false) Barbados
+        option value='by' selected=((@weatherLang == 'by') ? 'selected' : false) Belarus
+        option value='be' selected=((@weatherLang == 'be') ? 'selected' : false) Belgium
+        option value='bz' selected=((@weatherLang == 'bz') ? 'selected' : false) Belize
+        option value='bj' selected=((@weatherLang == 'bj') ? 'selected' : false) Benin
+        option value='bm' selected=((@weatherLang == 'bm') ? 'selected' : false) Bermuda
+        option value='bt' selected=((@weatherLang == 'bt') ? 'selected' : false) Bhutan
+        option value='bo' selected=((@weatherLang == 'bo') ? 'selected' : false) Bolivia, Plurinational State of
+        option value='ba' selected=((@weatherLang == 'ba') ? 'selected' : false) Bosnia and Herzegovina
+        option value='bw' selected=((@weatherLang == 'bw') ? 'selected' : false) Botswana
+        option value='bv' selected=((@weatherLang == 'bv') ? 'selected' : false) Bouvet Island
+        option value='br' selected=((@weatherLang == 'br') ? 'selected' : false) Brazil
+        option value='io' selected=((@weatherLang == 'io') ? 'selected' : false) British Indian Ocean Territory
+        option value='bn' selected=((@weatherLang == 'bn') ? 'selected' : false) Brunei Darussalam
+        option value='bg' selected=((@weatherLang == 'bg') ? 'selected' : false) Bulgaria
+        option value='bf' selected=((@weatherLang == 'bf') ? 'selected' : false) Burkina Faso
+        option value='bi' selected=((@weatherLang == 'bi') ? 'selected' : false) Burundi
+        option value='kh' selected=((@weatherLang == 'kh') ? 'selected' : false) Cambodia
+        option value='cm' selected=((@weatherLang == 'cm') ? 'selected' : false) Cameroon
+        option value='ca' selected=((@weatherLang == 'ca') ? 'selected' : false) Canada
+        option value='cv' selected=((@weatherLang == 'cv') ? 'selected' : false) Cape Verde
+        option value='ky' selected=((@weatherLang == 'ky') ? 'selected' : false) Cayman Islands
+        option value='cf' selected=((@weatherLang == 'cf') ? 'selected' : false) Central African Republic
+        option value='td' selected=((@weatherLang == 'td') ? 'selected' : false) Chad
+        option value='cl' selected=((@weatherLang == 'cl') ? 'selected' : false) Chile
+        option value='cn' selected=((@weatherLang == 'cn') ? 'selected' : false) China
+        option value='cx' selected=((@weatherLang == 'cx') ? 'selected' : false) Christmas Island
+        option value='cc' selected=((@weatherLang == 'cc') ? 'selected' : false) Cocos (Keeling) Islands
+        option value='co' selected=((@weatherLang == 'co') ? 'selected' : false) Colombia
+        option value='km' selected=((@weatherLang == 'km') ? 'selected' : false) Comoros
+        option value='cg' selected=((@weatherLang == 'cg') ? 'selected' : false) Congo
+        option value='cd' selected=((@weatherLang == 'cd') ? 'selected' : false) Congo, the Democratic Republic of the
+        option value='ck' selected=((@weatherLang == 'ck') ? 'selected' : false) Cook Islands
+        option value='cr' selected=((@weatherLang == 'cr') ? 'selected' : false) Costa Rica
+        option value='ci' selected=((@weatherLang == 'ci') ? 'selected' : false) C&ocirc;te d&rsquo;Ivoire
+        option value='hr' selected=((@weatherLang == 'hr') ? 'selected' : false) Croatia
+        option value='cu' selected=((@weatherLang == 'cu') ? 'selected' : false) Cuba
+        option value='cy' selected=((@weatherLang == 'cy') ? 'selected' : false) Cyprus
+        option value='cz' selected=((@weatherLang == 'cz') ? 'selected' : false) Czech Republic
+        option value='dk' selected=((@weatherLang == 'dk') ? 'selected' : false) Denmark
+        option value='dj' selected=((@weatherLang == 'dj') ? 'selected' : false) Djibouti
+        option value='dm' selected=((@weatherLang == 'dm') ? 'selected' : false) Dominica
+        option value='do' selected=((@weatherLang == 'do') ? 'selected' : false) Dominican Republic
+        option value='ec' selected=((@weatherLang == 'ec') ? 'selected' : false) Ecuador
+        option value='eg' selected=((@weatherLang == 'eg') ? 'selected' : false) Egypt
+        option value='sv' selected=((@weatherLang == 'sv') ? 'selected' : false) El Salvador
+        option value='gq' selected=((@weatherLang == 'gq') ? 'selected' : false) Equatorial Guinea
+        option value='er' selected=((@weatherLang == 'er') ? 'selected' : false) Eritrea
+        option value='ee' selected=((@weatherLang == 'ee') ? 'selected' : false) Estonia
+        option value='et' selected=((@weatherLang == 'et') ? 'selected' : false) Ethiopia
+        option value='fk' selected=((@weatherLang == 'fk') ? 'selected' : false) Falkland Islands (Malvinas)
+        option value='fo' selected=((@weatherLang == 'fo') ? 'selected' : false) Faroe Islands
+        option value='fj' selected=((@weatherLang == 'fj') ? 'selected' : false) Fiji
+        option value='fi' selected=((@weatherLang == 'fi') ? 'selected' : false) Finland
+        option value='fr' selected=((@weatherLang == 'fr') ? 'selected' : false) France
+        option value='gf' selected=((@weatherLang == 'gf') ? 'selected' : false) French Guiana
+        option value='pf' selected=((@weatherLang == 'pf') ? 'selected' : false) French Polynesia
+        option value='tf' selected=((@weatherLang == 'tf') ? 'selected' : false) French Southern Territories
+        option value='ga' selected=((@weatherLang == 'ga') ? 'selected' : false) Gabon
+        option value='gm' selected=((@weatherLang == 'gm') ? 'selected' : false) Gambia
+        option value='ge' selected=((@weatherLang == 'ge') ? 'selected' : false) Georgia
+        option value='de' selected=((@weatherLang == 'de') ? 'selected' : false) Germany
+        option value='gh' selected=((@weatherLang == 'gh') ? 'selected' : false) Ghana
+        option value='gi' selected=((@weatherLang == 'gi') ? 'selected' : false) Gibraltar
+        option value='gr' selected=((@weatherLang == 'gr') ? 'selected' : false) Greece
+        option value='gl' selected=((@weatherLang == 'gl') ? 'selected' : false) Greenland
+        option value='gd' selected=((@weatherLang == 'gd') ? 'selected' : false) Grenada
+        option value='gp' selected=((@weatherLang == 'gp') ? 'selected' : false) Guadeloupe
+        option value='gu' selected=((@weatherLang == 'gu') ? 'selected' : false) Guam
+        option value='gt' selected=((@weatherLang == 'gt') ? 'selected' : false) Guatemala
+        option value='gg' selected=((@weatherLang == 'gg') ? 'selected' : false) Guernsey
+        option value='gn' selected=((@weatherLang == 'gn') ? 'selected' : false) Guinea
+        option value='gw' selected=((@weatherLang == 'gw') ? 'selected' : false) Guinea-Bissau
+        option value='gy' selected=((@weatherLang == 'gy') ? 'selected' : false) Guyana
+        option value='ht' selected=((@weatherLang == 'ht') ? 'selected' : false) Haiti
+        option value='hm' selected=((@weatherLang == 'hm') ? 'selected' : false) Heard Island and McDonald Islands
+        option value='va' selected=((@weatherLang == 'va') ? 'selected' : false) Holy See (Vatican City State)
+        option value='hn' selected=((@weatherLang == 'hn') ? 'selected' : false) Honduras
+        option value='hk' selected=((@weatherLang == 'hk') ? 'selected' : false) Hong Kong
+        option value='hu' selected=((@weatherLang == 'hu') ? 'selected' : false) Hungary
+        option value='is' selected=((@weatherLang == 'is') ? 'selected' : false) Iceland
+        option value='in' selected=((@weatherLang == 'in') ? 'selected' : false) India
+        option value='id' selected=((@weatherLang == 'id') ? 'selected' : false) Indonesia
+        option value='ir' selected=((@weatherLang == 'ir') ? 'selected' : false) Iran, Islamic Republic of
+        option value='iq' selected=((@weatherLang == 'iq') ? 'selected' : false) Iraq
+        option value='ie' selected=((@weatherLang == 'ie') ? 'selected' : false) Ireland
+        option value='im' selected=((@weatherLang == 'im') ? 'selected' : false) Isle of Man
+        option value='il' selected=((@weatherLang == 'il') ? 'selected' : false) Israel
+        option value='it' selected=((@weatherLang == 'it') ? 'selected' : false) Italy
+        option value='jm' selected=((@weatherLang == 'jm') ? 'selected' : false) Jamaica
+        option value='jp' selected=((@weatherLang == 'jp') ? 'selected' : false) Japan
+        option value='je' selected=((@weatherLang == 'je') ? 'selected' : false) Jersey
+        option value='jo' selected=((@weatherLang == 'jo') ? 'selected' : false) Jordan
+        option value='kz' selected=((@weatherLang == 'kz') ? 'selected' : false) Kazakhstan
+        option value='ke' selected=((@weatherLang == 'ke') ? 'selected' : false) Kenya
+        option value='ki' selected=((@weatherLang == 'ki') ? 'selected' : false) Kiribati
+        option value='kp' selected=((@weatherLang == 'kp') ? 'selected' : false) Korea, Democratic People&rsquo;s Republic of
+        option value='kr' selected=((@weatherLang == 'kr') ? 'selected' : false) Korea, Republic of
+        option value='kw' selected=((@weatherLang == 'kw') ? 'selected' : false) Kuwait
+        option value='kg' selected=((@weatherLang == 'kg') ? 'selected' : false) Kyrgyzstan
+        option value='la' selected=((@weatherLang == 'la') ? 'selected' : false) Lao People&rsquo;s Democratic Republic
+        option value='lv' selected=((@weatherLang == 'lv') ? 'selected' : false) Latvia
+        option value='lb' selected=((@weatherLang == 'lb') ? 'selected' : false) Lebanon
+        option value='ls' selected=((@weatherLang == 'ls') ? 'selected' : false) Lesotho
+        option value='lr' selected=((@weatherLang == 'lr') ? 'selected' : false) Liberia
+        option value='ly' selected=((@weatherLang == 'ly') ? 'selected' : false) Libyan Arab Jamahiriya
+        option value='li' selected=((@weatherLang == 'li') ? 'selected' : false) Liechtenstein
+        option value='lt' selected=((@weatherLang == 'lt') ? 'selected' : false) Lithuania
+        option value='lu' selected=((@weatherLang == 'lu') ? 'selected' : false) Luxembourg
+        option value='mo' selected=((@weatherLang == 'mo') ? 'selected' : false) Macao
+        option value='mk' selected=((@weatherLang == 'mk') ? 'selected' : false) Macedonia, the former Yugoslav Republic of
+        option value='mg' selected=((@weatherLang == 'mg') ? 'selected' : false) Madagascar
+        option value='mw' selected=((@weatherLang == 'mw') ? 'selected' : false) Malawi
+        option value='my' selected=((@weatherLang == 'my') ? 'selected' : false) Malaysia
+        option value='mv' selected=((@weatherLang == 'mv') ? 'selected' : false) Maldives
+        option value='ml' selected=((@weatherLang == 'ml') ? 'selected' : false) Mali
+        option value='mt' selected=((@weatherLang == 'mt') ? 'selected' : false) Malta
+        option value='mh' selected=((@weatherLang == 'mh') ? 'selected' : false) Marshall Islands
+        option value='mq' selected=((@weatherLang == 'mq') ? 'selected' : false) Martinique
+        option value='mr' selected=((@weatherLang == 'mr') ? 'selected' : false) Mauritania
+        option value='mu' selected=((@weatherLang == 'mu') ? 'selected' : false) Mauritius
+        option value='yt' selected=((@weatherLang == 'yt') ? 'selected' : false) Mayotte
+        option value='mx' selected=((@weatherLang == 'mx') ? 'selected' : false) Mexico
+        option value='fm' selected=((@weatherLang == 'fm') ? 'selected' : false) Micronesia, Federated States of
+        option value='md' selected=((@weatherLang == 'md') ? 'selected' : false) Moldova, Republic of
+        option value='mc' selected=((@weatherLang == 'mc') ? 'selected' : false) Monaco
+        option value='mn' selected=((@weatherLang == 'mn') ? 'selected' : false) Mongolia
+        option value='me' selected=((@weatherLang == 'me') ? 'selected' : false) Montenegro
+        option value='ms' selected=((@weatherLang == 'ms') ? 'selected' : false) Montserrat
+        option value='ma' selected=((@weatherLang == 'ma') ? 'selected' : false) Morocco
+        option value='mz' selected=((@weatherLang == 'mz') ? 'selected' : false) Mozambique
+        option value='mm' selected=((@weatherLang == 'mm') ? 'selected' : false) Myanmar
+        option value='na' selected=((@weatherLang == 'na') ? 'selected' : false) Namibia
+        option value='nr' selected=((@weatherLang == 'nr') ? 'selected' : false) Nauru
+        option value='np' selected=((@weatherLang == 'np') ? 'selected' : false) Nepal
+        option value='nl' selected=((@weatherLang == 'nl') ? 'selected' : false) Netherlands
+        option value='an' selected=((@weatherLang == 'an') ? 'selected' : false) Netherlands Antilles
+        option value='nc' selected=((@weatherLang == 'nc') ? 'selected' : false) New Caledonia
+        option value='nz' selected=((@weatherLang == 'nz') ? 'selected' : false) New Zealand
+        option value='ni' selected=((@weatherLang == 'ni') ? 'selected' : false) Nicaragua
+        option value='ne' selected=((@weatherLang == 'ne') ? 'selected' : false) Niger
+        option value='ng' selected=((@weatherLang == 'ng') ? 'selected' : false) Nigeria
+        option value='nu' selected=((@weatherLang == 'nu') ? 'selected' : false) Niue
+        option value='nf' selected=((@weatherLang == 'nf') ? 'selected' : false) Norfolk Island
+        option value='mp' selected=((@weatherLang == 'mp') ? 'selected' : false) Northern Mariana Islands
+        option value='no' selected=((@weatherLang == 'no') ? 'selected' : false) Norway
+        option value='om' selected=((@weatherLang == 'om') ? 'selected' : false) Oman
+        option value='pk' selected=((@weatherLang == 'pk') ? 'selected' : false) Pakistan
+        option value='pw' selected=((@weatherLang == 'pw') ? 'selected' : false) Palau
+        option value='ps' selected=((@weatherLang == 'ps') ? 'selected' : false) Palestinian Territory, Occupied
+        option value='pa' selected=((@weatherLang == 'pa') ? 'selected' : false) Panama
+        option value='pg' selected=((@weatherLang == 'pg') ? 'selected' : false) Papua New Guinea
+        option value='py' selected=((@weatherLang == 'py') ? 'selected' : false) Paraguay
+        option value='pe' selected=((@weatherLang == 'pe') ? 'selected' : false) Peru
+        option value='ph' selected=((@weatherLang == 'ph') ? 'selected' : false) Philippines
+        option value='pn' selected=((@weatherLang == 'pn') ? 'selected' : false) Pitcairn
+        option value='pl' selected=((@weatherLang == 'pl') ? 'selected' : false) Poland
+        option value='pt' selected=((@weatherLang == 'pt') ? 'selected' : false) Portugal
+        option value='pr' selected=((@weatherLang == 'pr') ? 'selected' : false) Puerto Rico
+        option value='qa' selected=((@weatherLang == 'qa') ? 'selected' : false) Qatar
+        option value='re' selected=((@weatherLang == 're') ? 'selected' : false) R&eacute;union
+        option value='ro' selected=((@weatherLang == 'ro') ? 'selected' : false) Romania
+        option value='ru' selected=((@weatherLang == 'ru') ? 'selected' : false) Russian Federation
+        option value='rw' selected=((@weatherLang == 'rw') ? 'selected' : false) Rwanda
+        option value='bl' selected=((@weatherLang == 'bl') ? 'selected' : false) Saint Barth&eacute;lemy
+        option value='sh' selected=((@weatherLang == 'sh') ? 'selected' : false) Saint Helena, Ascension and Tristan da Cunha
+        option value='kn' selected=((@weatherLang == 'kn') ? 'selected' : false) Saint Kitts and Nevis
+        option value='lc' selected=((@weatherLang == 'lc') ? 'selected' : false) Saint Lucia
+        option value='mf' selected=((@weatherLang == 'mf') ? 'selected' : false) Saint Martin (French part)
+        option value='pm' selected=((@weatherLang == 'pm') ? 'selected' : false) Saint Pierre and Miquelon
+        option value='vc' selected=((@weatherLang == 'vc') ? 'selected' : false) Saint Vincent and the Grenadines
+        option value='ws' selected=((@weatherLang == 'ws') ? 'selected' : false) Samoa
+        option value='sm' selected=((@weatherLang == 'sm') ? 'selected' : false) San Marino
+        option value='st' selected=((@weatherLang == 'st') ? 'selected' : false) Sao Tome and Principe
+        option value='sa' selected=((@weatherLang == 'sa') ? 'selected' : false) Saudi Arabia
+        option value='sn' selected=((@weatherLang == 'sn') ? 'selected' : false) Senegal
+        option value='rs' selected=((@weatherLang == 'rs') ? 'selected' : false) Serbia
+        option value='sc' selected=((@weatherLang == 'sc') ? 'selected' : false) Seychelles
+        option value='sl' selected=((@weatherLang == 'sl') ? 'selected' : false) Sierra Leone
+        option value='sg' selected=((@weatherLang == 'sg') ? 'selected' : false) Singapore
+        option value='sk' selected=((@weatherLang == 'sk') ? 'selected' : false) Slovakia
+        option value='si' selected=((@weatherLang == 'si') ? 'selected' : false) Slovenia
+        option value='sb' selected=((@weatherLang == 'sb') ? 'selected' : false) Solomon Islands
+        option value='so' selected=((@weatherLang == 'so') ? 'selected' : false) Somalia
+        option value='za' selected=((@weatherLang == 'za') ? 'selected' : false) South Africa
+        option value='gs' selected=((@weatherLang == 'gs') ? 'selected' : false) South Georgia and the South Sandwich Islands
+        option value='es' selected=((@weatherLang == 'es') ? 'selected' : false) Spain
+        option value='lk' selected=((@weatherLang == 'lk') ? 'selected' : false) Sri Lanka
+        option value='sd' selected=((@weatherLang == 'sd') ? 'selected' : false) Sudan
+        option value='sr' selected=((@weatherLang == 'sr') ? 'selected' : false) Suriname
+        option value='sj' selected=((@weatherLang == 'sj') ? 'selected' : false) Svalbard and Jan Mayen
+        option value='sz' selected=((@weatherLang == 'sz') ? 'selected' : false) Swaziland
+        option value='se' selected=((@weatherLang == 'se') ? 'selected' : false) Sweden
+        option value='ch' selected=((@weatherLang == 'ch') ? 'selected' : false) Switzerland
+        option value='sy' selected=((@weatherLang == 'sy') ? 'selected' : false) Syrian Arab Republic
+        option value='tw' selected=((@weatherLang == 'tw') ? 'selected' : false) Taiwan, Province of China
+        option value='tj' selected=((@weatherLang == 'tj') ? 'selected' : false) Tajikistan
+        option value='tz' selected=((@weatherLang == 'tz') ? 'selected' : false) Tanzania, United Republic of
+        option value='th' selected=((@weatherLang == 'th') ? 'selected' : false) Thailand
+        option value='tl' selected=((@weatherLang == 'tl') ? 'selected' : false) Timor-Leste
+        option value='tg' selected=((@weatherLang == 'tg') ? 'selected' : false) Togo
+        option value='tk' selected=((@weatherLang == 'tk') ? 'selected' : false) Tokelau
+        option value='to' selected=((@weatherLang == 'to') ? 'selected' : false) Tonga
+        option value='tt' selected=((@weatherLang == 'tt') ? 'selected' : false) Trinidad and Tobago
+        option value='tn' selected=((@weatherLang == 'tn') ? 'selected' : false) Tunisia
+        option value='tr' selected=((@weatherLang == 'tr') ? 'selected' : false) Turkey
+        option value='tm' selected=((@weatherLang == 'tm') ? 'selected' : false) Turkmenistan
+        option value='tc' selected=((@weatherLang == 'tc') ? 'selected' : false) Turks and Caicos Islands
+        option value='tv' selected=((@weatherLang == 'tv') ? 'selected' : false) Tuvalu
+        option value='ug' selected=((@weatherLang == 'ug') ? 'selected' : false) Uganda
+        option value='ua' selected=((@weatherLang == 'ua') ? 'selected' : false) Ukraine
+        option value='ae' selected=((@weatherLang == 'ae') ? 'selected' : false) United Arab Emirates
+        option value='gb' selected=((@weatherLang == 'gb') ? 'selected' : false) United Kingdom
+        option value='us' selected=((@weatherLang == 'us') ? 'selected' : false) United States
+        option value='um' selected=((@weatherLang == 'um') ? 'selected' : false) United States Minor Outlying Islands
+        option value='uy' selected=((@weatherLang == 'uy') ? 'selected' : false) Uruguay
+        option value='uz' selected=((@weatherLang == 'uz') ? 'selected' : false) Uzbekistan
+        option value='vu' selected=((@weatherLang == 'vu') ? 'selected' : false) Vanuatu
+        option value='ve' selected=((@weatherLang == 've') ? 'selected' : false) Venezuela, Bolivarian Republic of
+        option value='vn' selected=((@weatherLang == 'vn') ? 'selected' : false) Viet Nam
+        option value='vg' selected=((@weatherLang == 'vg') ? 'selected' : false) Virgin Islands, British
+        option value='vi' selected=((@weatherLang == 'vi') ? 'selected' : false) Virgin Islands, U.S.
+        option value='wf' selected=((@weatherLang == 'wf') ? 'selected' : false) Wallis and Futuna
+        option value='eh' selected=((@weatherLang == 'eh') ? 'selected' : false) Western Sahara
+        option value='ye' selected=((@weatherLang == 'ye') ? 'selected' : false) Yemen
+        option value='zm' selected=((@weatherLang == 'zm') ? 'selected' : false) Zambia
+        option value='zw' selected=((@weatherLang == 'zw') ? 'selected' : false) Zimbabwe

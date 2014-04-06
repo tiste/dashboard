@@ -9,6 +9,7 @@ class App.Views.Settings extends Backbone.View
   events:
     'change #m-settings--background': 'setBackground'
     'change #m-settings--lang': 'setLang'
+    'change #m-settings--lang--weather': 'setWeatherLang'
     'click .m-overlay--settings': 'closeSettings'
     'click .m-settings--background--cancel': 'cancelBackground'
     'click .m-settings--icon': 'openSettings'
@@ -36,6 +37,10 @@ class App.Views.Settings extends Backbone.View
 
   setLang: (e) =>
     @model.setLang @$('#m-settings--lang').val()
+    goTo('/')
+
+  setWeatherLang: (e) =>
+    @model.setWeatherLang @$('#m-settings--lang--weather').val()
     goTo('/')
 
   render: ->
