@@ -79,7 +79,7 @@
           return function(weather, i) {
             var _skim_codeattributes1, _skim_codeattributes2, _skim_codeattributes3;
             if (i === 0) {
-              _buf += "<li class=\"m-weather--item\"><form><div class=\"form-group\"><input class=\"form-control input-lg m-weather--input\" type=\"text\"";
+              _buf += "<li class=\"m-weather--item\"><form><div class=\"form-group\"><input class=\"form-control input-lg m-weather--input\" data-intro=\"Modifiez la ville de la météo\" data-position=\"left\" type=\"text\"";
               _skim_codeattributes1 = _this.safe(weather.city);
               switch (_skim_codeattributes1) {
                 case true:
