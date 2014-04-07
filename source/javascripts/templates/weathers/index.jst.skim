@@ -11,14 +11,14 @@
                     .form-group
                       input type='text' class='form-control input-lg m-weather--input' data-intro='Modifiez la ville de la météo' data-position='left' value=(@safe weather.city)
 
-                  img.max-width src="/images/weathers/#{weather.icon}.png" alt=(weather.text)
+                  img.max-width src="/images/weathers/blank.png" alt=(weather.text) class="m-weather--#{weather.icon}"
 
                   .h2.mtn.celsius.text-center= weather.tempDay
               - else
                 li.m-weather--item.pvxl
                   .h3.text-center= weather.dateHTML
 
-                  img.max-width src="/images/weathers/#{weather.icon}.png" alt=(weather.text)
+                  img.max-width src="/images/weathers/blank.png" alt=(weather.text) class="m-weather--#{weather.icon}"
 
                   .text-center
                     .h4.celsius= weather.tempDay
