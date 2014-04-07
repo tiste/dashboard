@@ -2,8 +2,9 @@
 #= require underscore
 #= require backbone
 #= require backbone.localStorage
-#= require momentjs/min/moment-with-langs
+#= require backgroundCheck/background-check
 #= require chardin.js/chardinjs
+#= require momentjs/min/moment-with-langs
 #= require javascript
 #= require app
 #= require_tree ./templates

@@ -17,6 +17,7 @@ class App.Views.Settings extends Backbone.View
 
   cancelBackground: =>
     @model.setBackground @model.defaults.background
+    goTo('/')
 
   closeSettings: (e) =>
     if e and $(e.target).hasClass('m-overlay--settings')
@@ -38,7 +39,7 @@ class App.Views.Settings extends Backbone.View
     fReader.readAsDataURL file
     fReader.onload = (e) =>
       @model.setBackground e.target.result
-      @closeSettings()
+      goTo('/')
 
   setLang: (e) =>
     @model.setLang @$('#m-settings--lang').val()

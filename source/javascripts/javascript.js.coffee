@@ -58,6 +58,10 @@
   _(['green', 'blue', 'black', 'yellow', 'orange', 'red', 'gray']).shuffle()[0]
 
 $(window).load ->
+  BackgroundCheck.init
+    targets: 'body'
+    images: 'body'
+
   if localStorage
     unless localStorage['tips']
       localStorage['tips'] = true
