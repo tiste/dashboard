@@ -16,6 +16,11 @@ class App.Views.WeathersIndex extends Backbone.View
     setCity @$('.m-weather--input').val()
     city = getCity()
 
+    $(@$('.m-weather--item').get().reverse()).each (i) ->
+      setTimeout(=>
+        $(this).fadeOut()
+      , i * 100)
+
     weathers.fetch
       data:
         lang: window.App.Settings.get('lang')
@@ -32,4 +37,8 @@ class App.Views.WeathersIndex extends Backbone.View
 
   render: =>
     $(@el).html(@template(weathers: @collection.toJSON()))
+    @$('.m-weather--item').hide().each (i) ->
+      setTimeout(=>
+        $(this).fadeIn()
+      , i * 100)
     @
