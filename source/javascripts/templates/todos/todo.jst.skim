@@ -1,0 +1,10 @@
+.m-todo--item
+  .m-todo--show
+    input.m-todo--done type='checkbox' checked=(@done ? 'true' : 'false')
+
+    label= @title
+
+    button type='button' class='btn btn-default btn-sm m-todo--destroy'
+      span.glyphicon.glyphicon-trash
+
+  input.m-todo--edit type='text' value=(@title)

@@ -4,16 +4,16 @@ class App.Views.Settings extends Backbone.View
   className: 'm-settings'
 
   initialize: ->
-    @model.on('change', @render, this)
+    @model.on 'change', @render, @
 
   events:
-    'change #m-settings--background': 'setBackground'
-    'change #m-settings--lang': 'setLang'
-    'change #m-settings--lang--weather': 'setWeatherLang'
-    'click .m-overlay--settings': 'closeSettings'
-    'click .m-settings--background--cancel': 'cancelBackground'
-    'click .m-settings--help': 'openHelp'
-    'click .m-settings--icon': 'openSettings'
+    'change #m-settings--background':         'setBackground'
+    'change #m-settings--lang':               'setLang'
+    'change #m-settings--lang--weather':      'setWeatherLang'
+    'click .m-overlay--settings':             'closeSettings'
+    'click .m-settings--background--cancel':  'cancelBackground'
+    'click .m-settings--help':                'openHelp'
+    'click .m-settings--icon':                'openSettings'
 
   cancelBackground: =>
     @model.setBackground @model.defaults.background

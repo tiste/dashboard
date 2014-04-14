@@ -6,17 +6,17 @@ class App.Models.Settings extends Backbone.Model
 
   localStorage: new Backbone.LocalStorage('dashboard')
 
-  setBackground: (background) =>
+  setBackground: (background) ->
     @set('background', background)
     @save()
     @
 
-  setLang: (lang) =>
+  setLang: (lang) ->
     @set('lang', lang)
     @save()
     @
 
-  setWeatherLang: (lang) =>
+  setWeatherLang: (lang) ->
     @set('weatherLang', lang)
     @save()
     @

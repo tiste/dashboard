@@ -57,12 +57,7 @@
 @shuffleColor = ->
   _(['green', 'blue', 'black', 'yellow', 'orange', 'red', 'gray']).shuffle()[0]
 
-$(document).ready ->
-  $('body').prepend('<div class="m-overlay black transparent" />')
-
 $(window).load ->
-  $('.m-overlay').fadeOut()
-
   BackgroundCheck.init
     targets: 'body'
     images: 'body'
