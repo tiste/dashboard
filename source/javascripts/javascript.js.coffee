@@ -33,8 +33,8 @@
       d = moment().lang(window.App.Settings.get('lang'))
       date = d.format('LLLL').split(' ')
 
-      clock.html('<div class="m-clock--hour pos-absolute opacity-high z-index--sm">' + d.format('H:mm:ss') + '</div>')
-      clock.append('<div class="m-clock--date pos-absolute text-right opacity">' + date[0] + ' ' + date[1] + ' ' + date[2] + '<br><small>' + nameday + '</small></div>')
+      clock.html('<div class="m-clock--hour mlm pull-left opacity-high">' + d.format('H:mm:ss') + '</div>')
+      clock.append('<div class="m-clock--date mtm mrm pull-right text-right opacity">' + date[0] + ' ' + date[1] + ' ' + date[2] + '<br><small>' + nameday + '</small></div>')
     , 1000)
 
 @getCity = ->

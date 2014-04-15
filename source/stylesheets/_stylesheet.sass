@@ -12,6 +12,7 @@ html, body
 
 body
   color: #FEFEFE
+  background-attachment: fixed
 
 .pos-absolute-center
   margin: auto
@@ -46,9 +47,6 @@ body
 .contain
   @include background-size(contain)
 
-.z-index--sm
-  z-index: -1
-
 [class^='m-icons']
   width: 60px
   height: 60px
@@ -80,9 +78,23 @@ body
 [class^='m-overlay']
   z-index: 10
   margin: auto
-  position: absolute
+  position: fixed
   top: 0
   right: 0
   bottom: 0
   left: 0
   color: #333
+
+#container, #container > div
+  @extend .min-height
+
+.l-content
+  min-height: 100%
+  margin-bottom: -350px
+
+.l-content:after
+  content: ""
+  display: block
+
+.l-footer, .l-content:after
+  height: 350px

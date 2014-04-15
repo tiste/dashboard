@@ -1,6 +1,8 @@
 class App.Views.Todo extends Backbone.View
   template: JST['templates/todos/todo']
 
+  className: 'm-todo--item'
+
   tagName: 'li'
 
   initialize: ->
@@ -21,7 +23,7 @@ class App.Views.Todo extends Backbone.View
     $(@el).addClass 'editing'
     @$('.m-todo--edit').focus()
 
-  update: =>
+  update: _.debounce((e) ->
     title = @$('.m-todo--edit').val()
 
     unless title
@@ -29,9 +31,12 @@ class App.Views.Todo extends Backbone.View
     else
       @model.save title: title
       $(@el).removeClass 'editing'
+  , 200)
 
   updateOnEnter: (e) =>
-    @update() if e.keyCode is 13
+    if e.keyCode is 13
+      e.preventDefault()
+      @update()
 
   toggleDone: =>
     @model.toggleDone()

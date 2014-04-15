@@ -1,5 +1,12 @@
-input.m-todo--new type='text'
+.container.mvxl
+  .row
+    .col-md-6.col-md-offset-3
+      form
+        .form-group
+          input.m-todo--new.form-control.input-lg type='text' data-intro='Ajoutez vos rappels ici et cliquez pour modifier' data-position='right' placeholder='Dashboard, rappelle moi...'
 
-ul.m-todo--list
+          .light-gray.transparent.clearfix
+            ul.m-todo--list.pln
 
-a.m-todo--clear Effacer les rappels complétés
+            .text-center
+              a.btn.btn-link.m-todo--clear
