@@ -4,10 +4,16 @@ class App.Views.DashboardIndex extends Backbone.View
   loadWidgets: =>
     searchView    = new App.Views.GooglesIndex collection: new App.Collections.Googles()
     settingsView  = new App.Views.Settings model: window.App.Settings
+    todos         = new App.Collections.Todos()
     weathers      = new App.Collections.Weathers()
 
     @$('.m-widget--google').html(searchView.render().el).find('.m-overlay--google').hide()
     @$('.m-widget--settings').html(settingsView.render().el)
+
+    todos.fetch
+      success: =>
+        view = new App.Views.TodosIndex collection: todos
+        @$('.m-widget--todo').html(view.render().el)
 
     weathers.fetch
       data:

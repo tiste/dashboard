@@ -1,0 +1,38 @@
+.m-todo--list
+  overflow: scroll
+  max-height: 350px
+
+.m-todo--item
+  list-style-type: none
+
+  & > form
+    display: none
+
+  &.editing
+    .m-todo--show
+      display: none
+
+    & > form
+      display: inherit
+
+.m-todo--title
+  @extend .input-lg
+  @extend .form-control
+  height: auto
+  min-height: 46px
+  word-wrap: break-word
+
+.done
+  .m-todo--title
+    text-decoration: line-through
+
+  .m-todo--done
+    color: #333
+
+.m-todo--done, .m-todo--destroy
+  color: #FEFEFE
+  background-color: rgba(0, 0, 0, .15)
+  height: 46px
+  width: 46px
+  right: 0
+  top: 0
