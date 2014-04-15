@@ -1,6 +1,6 @@
 - $('body').css 'background-image': 'url(' + @background + ')'
 
-.m-settings--icon.pos-absolute.clickable data-intro='Accèdez aux différents réglages' data-position='top'
+.m-settings--icon.pos-fixed.clickable data-intro='Accèdez aux différents réglages' data-position='top'
   i.h1.mbn.mrx.glyphicon.glyphicon-wrench
 
 .m-overlay--settings.transparent class=(shuffleColor())
@@ -8,7 +8,7 @@
     .form-group
       label.h2 for='m-settings--background' Votre plus belle photo de voyage
       .input-group
-        input type='file' id='m-settings--background' class='form-control input-lg m-settings--background'
+        input.form-control.input-lg.m-settings--background type='file' id='m-settings--background'
         span.input-group-btn
           button.btn.btn-danger.btn-lg.m-settings--background--cancel type='button' &times;
 

@@ -1,0 +1,16 @@
+.m-todo--show
+  form
+    .form-group
+      .m-todo--title.pos-relative
+        .container-fluid.phn
+          .row
+            .col-md-11
+              = @title
+        .m-todo--done.pos-absolute.clickable.pull-right data-intro='Marquez comme terminé' data-position='bottom'
+          .h3.glyphicon.glyphicon-ok.mtm.mlm
+
+form
+  .form-group.pos-relative
+    input.m-todo--edit.form-control.input-lg type='text' value=(@title)
+    .m-todo--destroy.pos-absolute.clickable.pull-right
+      .h3.glyphicon.glyphicon-trash.mtm.mlm

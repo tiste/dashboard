@@ -9,7 +9,7 @@ class App.Views.GooglesIndex extends Backbone.View
     'submit .m-google': 'doSearch'
 
   initialize: ->
-    @collection.on('reset', @render, this)
+    @collection.on 'reset', @render, @
     _.bindAll @, 'search'
     $(document).bind 'keydown', @openSearch
 

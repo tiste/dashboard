@@ -6,7 +6,7 @@ class App.Views.WeathersIndex extends Backbone.View
     'submit .m-weather form': 'refetch'
 
   initialize: ->
-    @collection.on('reset', @render, this)
+    @collection.on 'reset', @render, @
 
   refetch: (e) =>
     e.preventDefault()
