@@ -74,9 +74,9 @@
       return Skim.withContext.call({}, context, function() {
         var _buf, _skim_codeattributes1;
         _buf = '';
-        _buf += "<div class=\"m-todo--show\"><form><div class=\"form-group\"><div class=\"m-todo--title pos-relative\"><div class=\"container-fluid phn\"><div class=\"row\"><div class=\"col-md-11\">";
+        _buf += "<div class=\"m-todo--show\"><form><div class=\"form-group\"><div class=\"m-todo--title pos-relative\"><div class=\"container-fluid phn\"><div class=\"row\"><div class=\"col-md-11 m-todo--title--text\">";
         _buf += this.escape(this.title);
-        _buf += "</div></div></div><div class=\"m-todo--done pos-absolute clickable pull-right\" data-intro=\"Marquez comme terminé\" data-position=\"bottom\"><div class=\"h3 glyphicon glyphicon-ok mtm mlm\"></div></div></div></div></form></div><form><div class=\"form-group pos-relative\"><input class=\"m-todo--edit form-control input-lg\" type=\"text\"";
+        _buf += "</div></div></div><div class=\"m-todo--done pos-absolute clickable pull-right\"><div class=\"h3 glyphicon glyphicon-ok mtm mlm\"></div></div></div></div></form></div><form><div class=\"form-group pos-relative\"><input class=\"m-todo--edit form-control input-lg\" type=\"text\"";
         _skim_codeattributes1 = this.title;
         switch (_skim_codeattributes1) {
           case true:
