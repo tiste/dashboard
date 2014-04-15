@@ -8,6 +8,9 @@
   & > form
     display: none
 
+  &:last-child .form-group
+    @extend .mbn
+
   &.editing
     .m-todo--show
       display: none
@@ -22,12 +25,9 @@
   min-height: 46px
   word-wrap: break-word
 
-.done
-  .m-todo--title
-    text-decoration: line-through
-
-  .m-todo--done
-    color: #333
+  .background--light &
+    background-color: rgba(0, 0, 0, 0.7)
+    color: #FEFEFE
 
 .m-todo--done, .m-todo--destroy
   color: #FEFEFE
@@ -36,3 +36,29 @@
   width: 46px
   right: 0
   top: 0
+
+.m-todo--destroy
+  color: #333
+
+.done
+  .m-todo--title--text
+    text-decoration: line-through
+
+  .m-todo--done
+    color: #333
+
+.background--light .m-todo .form-control
+  background-color: invert(rgba(255, 255, 255, 0.7))
+  color: #FEFEFE
+
+.background--light
+  .done
+    .m-todo--done
+      color: #FEFEFE
+
+  .m-todo--done, .m-todo--destroy
+    background-color: invert(rgba(0, 0, 0, .15))
+    color: #333
+
+  .m-todo--destroy
+    color: #FEFEFE

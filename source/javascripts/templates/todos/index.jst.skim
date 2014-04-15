@@ -1,4 +1,4 @@
-.container.mvxl
+.container.huge-margin
   .row
     .col-md-6.col-md-offset-3
       form
@@ -6,7 +6,7 @@
           input.m-todo--new.form-control.input-lg type='text' data-intro='Ajoutez vos rappels ici et cliquez pour modifier' data-position='right' placeholder='Dashboard, rappelle moi...'
 
           .light-gray.transparent.clearfix
-            ul.m-todo--list.pln
+            ul.m-todo--list.pln.mbn
 
             .text-center
               a.btn.btn-link.m-todo--clear

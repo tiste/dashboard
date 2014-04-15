@@ -56,6 +56,9 @@
   &.transparent
     @include background-opacity(#ecf0f1)
 
+  .background--light &
+    @include background-opacity(invert(#ecf0f1))
+
 .white
   background-color: #FFFFFF
 

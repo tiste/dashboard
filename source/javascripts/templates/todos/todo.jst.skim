@@ -4,9 +4,9 @@
       .m-todo--title.pos-relative
         .container-fluid.phn
           .row
-            .col-md-11
+            .col-md-11.m-todo--title--text
               = @title
-        .m-todo--done.pos-absolute.clickable.pull-right data-intro='Marquez comme terminé' data-position='bottom'
+        .m-todo--done.pos-absolute.clickable.pull-right
           .h3.glyphicon.glyphicon-ok.mtm.mlm
 
 form

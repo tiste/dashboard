@@ -25,6 +25,7 @@ class App.Views.WeathersIndex extends Backbone.View
       data:
         lang: window.App.Settings.get('lang')
         q: city
+        type: 'accurate'
         units: 'metric'
       dataType: 'jsonp'
       success: =>
@@ -33,7 +34,7 @@ class App.Views.WeathersIndex extends Backbone.View
         @render()
       error: =>
         setCity('Paris')
-        goTo('/')
+        @$('.m-weather').html("<p class='lead text-center opacity'>La météo est vraiment mauvaise et ne veut pas s'afficher, veuillez recharger...</p>")
 
   render: =>
     $(@el).html(@template(weathers: @collection.toJSON()))

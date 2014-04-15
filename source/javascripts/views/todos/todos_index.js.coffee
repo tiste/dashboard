@@ -25,8 +25,9 @@ class App.Views.TodosIndex extends Backbone.View
   countDone: ->
     done = @collection.done().length
 
-    return "Effacer le rappel complété" if done is 1
-    "Effacer les #{done} rappels complétés"
+    return false if done is 0
+    return 'Effacer la tâche complétée' if done is 1
+    "Effacer les #{done} tâches complétées"
 
   createOnEnter: (e) =>
     return if e.keyCode isnt 13
@@ -42,6 +43,11 @@ class App.Views.TodosIndex extends Backbone.View
 
   render: =>
     $(@el).html(@template)
-    @$('.m-todo--clear').text(@countDone())
     @addAll()
+
+    if done = @countDone()
+      @$('.m-todo--clear').text(done)
+    else
+      @$('.m-todo--clear').hide()
+
     @
