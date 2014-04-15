@@ -1,4 +1,4 @@
-(function() { this.JST || (this.JST = {}); this.JST["templates/dashboard/index"] = (function() {
+(function() { this.JST || (this.JST = {}); this.JST["templates/todos/todo"] = (function() {
     this.Skim = {
       access: function(name) {
         var value;
@@ -72,9 +72,25 @@
         context = {};
       }
       return Skim.withContext.call({}, context, function() {
-        var _buf;
+        var _buf, _skim_codeattributes1;
         _buf = '';
-        _buf += "<div class=\"container-fluid min-height pln prn\"><div class=\"m-widget--help pos-absolute\" data-intro=\"Tapez n&#39;importe où pour chercher\" data-position=\"bottom\" style=\"width: 800px; height: 50px; top: 20px; left: 50%; margin-left: -400px;\"></div><div class=\"m-widget--google\"></div><div class=\"l-content\"><div class=\"m-widget--clock clearfix\"></div><div class=\"m-widget--todo\"></div></div><div class=\"l-footer m-widget--weather max-width\"></div><div class=\"m-widget--settings\"></div></div>";
+        _buf += "<div class=\"m-todo--show\"><form><div class=\"form-group\"><div class=\"m-todo--title pos-relative\"><div class=\"container-fluid phn\"><div class=\"row\"><div class=\"col-md-11\">";
+        _buf += this.escape(this.title);
+        _buf += "</div></div></div><div class=\"m-todo--done pos-absolute clickable pull-right\" data-intro=\"Marquez comme terminé\" data-position=\"bottom\"><div class=\"h3 glyphicon glyphicon-ok mtm mlm\"></div></div></div></div></form></div><form><div class=\"form-group pos-relative\"><input class=\"m-todo--edit form-control input-lg\" type=\"text\"";
+        _skim_codeattributes1 = this.title;
+        switch (_skim_codeattributes1) {
+          case true:
+            _buf += " value=\"value\"";
+            break;
+          case false:
+          case null:
+            break;
+          default:
+            _buf += " value=\"";
+            _buf += this.escape(_skim_codeattributes1);
+            _buf += "\"";
+        }
+        _buf += " /><div class=\"m-todo--destroy pos-absolute clickable pull-right\"><div class=\"h3 glyphicon glyphicon-trash mtm mlm\"></div></div></div></form>";
         return _buf;
       });
     };

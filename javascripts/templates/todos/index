@@ -1,4 +1,4 @@
-(function() { this.JST || (this.JST = {}); this.JST["templates/dashboard/index"] = (function() {
+(function() { this.JST || (this.JST = {}); this.JST["templates/todos/index"] = (function() {
     this.Skim = {
       access: function(name) {
         var value;
@@ -74,7 +74,7 @@
       return Skim.withContext.call({}, context, function() {
         var _buf;
         _buf = '';
-        _buf += "<div class=\"container-fluid min-height pln prn\"><div class=\"m-widget--help pos-absolute\" data-intro=\"Tapez n&#39;importe où pour chercher\" data-position=\"bottom\" style=\"width: 800px; height: 50px; top: 20px; left: 50%; margin-left: -400px;\"></div><div class=\"m-widget--google\"></div><div class=\"l-content\"><div class=\"m-widget--clock clearfix\"></div><div class=\"m-widget--todo\"></div></div><div class=\"l-footer m-widget--weather max-width\"></div><div class=\"m-widget--settings\"></div></div>";
+        _buf += "<div class=\"container mvxl\"><div class=\"row\"><div class=\"col-md-6 col-md-offset-3\"><form><div class=\"form-group\"><input class=\"m-todo--new form-control input-lg\" data-intro=\"Ajoutez vos rappels ici et cliquez pour modifier\" data-position=\"right\" placeholder=\"Dashboard, rappelle moi...\" type=\"text\" /><div class=\"light-gray transparent clearfix\"><ul class=\"m-todo--list pln\"></ul><div class=\"text-center\"><a class=\"btn btn-link m-todo--clear\"></a></div></div></div></form></div></div></div>";
         return _buf;
       });
     };

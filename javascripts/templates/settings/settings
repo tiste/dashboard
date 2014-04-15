@@ -77,7 +77,7 @@
         $('body').css({
           'background-image': 'url(' + this.background + ')'
         });
-        _buf += "<div class=\"m-settings--icon pos-absolute clickable\" data-intro=\"Accèdez aux différents réglages\" data-position=\"top\"><i class=\"h1 mbn mrx glyphicon glyphicon-wrench\"></i></div><div class=\"m-overlay--settings transparent ";
+        _buf += "<div class=\"m-settings--icon pos-fixed clickable\" data-intro=\"Accèdez aux différents réglages\" data-position=\"top\"><i class=\"h1 mbn mrx glyphicon glyphicon-wrench\"></i></div><div class=\"m-overlay--settings transparent ";
         _skim_codeattributes1 = shuffleColor();
         if (this.isArray(_skim_codeattributes1)) {
           _skim_codeattributes1 = this.flatten(_skim_codeattributes1);
