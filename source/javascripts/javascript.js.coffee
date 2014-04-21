@@ -40,9 +40,13 @@
 @getCity = ->
   if localStorage
     if localStorage['city']
-      return localStorage['city'] + ',' + window.App.Settings.get('weatherLang')
+      try
+        city = JSON.parse localStorage['city']
+      catch e
+        city = localStorage['city']
 
-  'Paris,' + window.App.Settings.get('weatherLang')
+      return localStorage['city'] + ',' + window.App.Settings.get('weatherLang') unless city instanceof Object
+      return city
 
 @goTo = (url) ->
   window.open(url, '_self')
@@ -53,6 +57,16 @@
 @setCity = (city) ->
   if localStorage && city
     localStorage['city'] = city
+
+@setGeoloc = ->
+  if navigator.geolocation
+    navigator.geolocation.getCurrentPosition((position) ->
+      setCity JSON.stringify { 'lat': position.coords.latitude, 'lon': position.coords.longitude }
+    , ->
+      setCity 'Paris'
+    )
+  else
+    setCity 'Paris'
 
 @shuffleColor = ->
   _(['green', 'blue', 'black', 'yellow', 'orange', 'red', 'gray']).shuffle()[0]

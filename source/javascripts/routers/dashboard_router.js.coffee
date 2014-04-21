@@ -6,6 +6,9 @@ class App.Routers.Dashboard extends Backbone.Router
     window.App.Settings = new App.Models.Settings id: 1
     window.App.Settings.fetch()
 
+    unless getCity()
+      setGeoloc()
+
     view = new App.Views.DashboardIndex
     $('#container').html(view.render().el)
     clock()

@@ -24,7 +24,9 @@ class App.Views.WeathersIndex extends Backbone.View
     weathers.fetch
       data:
         lang: window.App.Settings.get('lang')
-        q: city
+        lat: city.lat if city instanceof Object
+        lon: city.lon if city instanceof Object
+        q: city unless city instanceof Object
         type: 'accurate'
         units: 'metric'
       dataType: 'jsonp'
@@ -33,7 +35,7 @@ class App.Views.WeathersIndex extends Backbone.View
         setCity weathers.at(0).get('city')
         @render()
       error: =>
-        setCity('Paris')
+        setGeoloc()
         @$('.m-weather').html("<p class='lead text-center opacity'>La météo est vraiment mauvaise et ne veut pas s'afficher, veuillez recharger...</p>")
 
   render: =>
